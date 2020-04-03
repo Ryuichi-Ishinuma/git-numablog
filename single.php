@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+
 <div class="main">
 <div class="container">
     <div class="contents">
@@ -74,4 +76,6 @@ the_post(); ?>
 </div>
 <!--container-->
 </div><!--main-->
+
+
 <?php get_footer(); ?>

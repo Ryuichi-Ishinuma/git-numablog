@@ -116,7 +116,8 @@ header .siteinfo h1 {
 }
 
 header nav {
-  background: #0a8fa5;
+  /* background: #0a8fa5; */
+  background-color: #052348;
 }
 
 
@@ -840,7 +841,7 @@ footer aside ul li a:hover {
     background: #0b8fa5;
     box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .25);
   }
-  header .siteinfo #nav-open span, 
+  header .siteinfo #nav-open span,
   header .siteinfo #nav-open span::before,
   header .siteinfo #nav-open span::after {
     background: #fff;
@@ -855,7 +856,7 @@ footer aside ul li a:hover {
   header .contents {
     padding-top: 80px;
   }
-  
+
   .main {
     margin-top: 65px;
     padding-top: 20px;
@@ -885,7 +886,7 @@ footer aside ul li a:hover {
   }
   footer aside ul .widget_categories,
   footer aside ul .widget_recent_entries {
-    border-bottom: 1px solid #fff;  
+    border-bottom: 1px solid #fff;
   }
 }/* end スマホサイズ */
 

@@ -1,4 +1,6 @@
+
 <?php get_header(); ?>
+
 <div class="main">
 <div class="container">
     <div class="contents">
@@ -11,7 +13,7 @@
             <?php single_cat_title(); ?>
         </p>
        <?php endif; ?>
-        
+
         <?php if(is_month() ): ?>
         <h2 class="archive-title">
             <?php echo get_the_date('Y年n月'); ?>
@@ -76,11 +78,12 @@
 
 
 
-    <div class="blogmenu">  
+    <div class="blogmenu">
         <ul>
             <?php dynamic_sidebar(); ?>
         </ul>
     </div><!--blogmenu-->
 </div><!--container-->
 </div><!--main-->
+
 <?php get_footer(); ?>

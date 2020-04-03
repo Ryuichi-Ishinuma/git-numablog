@@ -5,3 +5,6 @@
 
 /* sql */
 *.sql
+
+/* node_modulesはサイズが大きすぎるためにgit管理しない */
+*node_modules/
