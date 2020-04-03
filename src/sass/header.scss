@@ -1,0 +1,34 @@
+/* ヘッダー */
+header {
+  background-color: #f7f7f7;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header .siteinfo {
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+header .siteinfo a {
+  color: #000;
+}
+
+header .siteinfo h1 {
+  float: left;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+}
+
+header nav {
+  /* background: #0a8fa5; */
+  background-color: #052348;
+}

@@ -1,0 +1,99 @@
+/* フッター */
+footer {
+  background: #0a8fa5;
+  overflow: hidden;
+}
+
+footer .footer-category aside {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer-menu ul {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#footer-menu ul li {
+  display: inline;
+  list-style: outside none none;
+}
+
+#footer-menu ul li::before {
+  content: "|";
+  padding: 0 0.6em;
+}
+
+#footer-menu ul li:first-child::before {
+  content: "";
+  padding: 0;
+}
+
+#footer-menu ul .sub-menu {
+  display: none;
+}
+
+#footer-menu ul a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#footer-menu ul a:hover {
+  text-decoration: underline;
+}
+
+footer aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer aside ul li {
+  font-size: 12px;
+  color: #fff;
+  padding: 10px;
+}
+
+footer aside ul li a {
+  color: #fff;
+  line-height: 1.8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer aside ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_bar {
+  background: #0a8fa5;
+  border-top: 1px solid #f7f7f7;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  footer aside {
+    display: none;
+  }
+}
+
+@media screen and(max-width: 600px) {
+  footer .footer-category aside {
+  display: block;
+  }
+  footer .footer-category aside ul {
+  margin: 0;
+  padding: 0;
+  }
+  footer aside ul .widget_categories,
+  footer aside ul .widget_recent_entries {
+    border-bottom: 1px solid #fff;
+  }
+}
