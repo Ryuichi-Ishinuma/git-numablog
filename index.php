@@ -1,13 +1,9 @@
 <?php get_header(); ?>
-<div class="main">
-<div class="container">
-
+<div class="wrapper">
+  <div class="main">
     <div class="contents">
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-            <?php if(function_exists('bcn_display'))
-{
-bcn_display();
-}?>
+            <?php if(function_exists('bcn_display')){bcn_display(); }?>
         </div>
 
         <!--カテゴリー名の表示-->
@@ -23,8 +19,7 @@ bcn_display();
         </h2>
         <?php endif; ?>
 
-        <?php if(have_posts()): while(have_posts()):
-the_post(); ?>
+        <?php if(have_posts()): while(have_posts()):the_post(); ?>
         <article class="singlepage" <?php post_class(); ?>>
             <?php if( is_single() ): ?>
 
@@ -48,11 +43,11 @@ the_post(); ?>
                 <span class="postcom">
                     <i class="fa fa-comment"></i>
                     <a href="<?php comments_link(); ?>">
-                        <?php comments_number(
-'コメント',
-'コメント(１件)',
-'コメント(%件)'
-); ?>
+                      <?php comments_number(
+                        'コメント',
+                        'コメント(１件)',
+                        'コメント(%件)'
+                        ); ?>
                     </a>
                 </span>
             </div>
@@ -75,19 +70,19 @@ the_post(); ?>
         <?php endwhile; endif; ?>
 
         <div class="pager">
-            <?php if(function_exists('wp_pagenavi')) {
-wp_pagenavi();
-} ?>
+          <?php if(function_exists('wp_pagenavi')) {
+              wp_pagenavi();
+            }
+          ?>
         </div>
 
     </div>
     <!--contents-->
 
-    <!-- サイドバーの読み込み -->
-    <?php get_sidebar(); ?>
+  </div>
+
+  <!-- サイドバーの読み込み -->
+  <?php get_sidebar(); ?>
 </div>
-<!--container-->
-</div>
-<!--main-->
 
 <?php get_footer(); ?>
