@@ -1,4 +1,4 @@
-
+<?php
 function twpp_enqueue_styles() {
   wp_enqueue_style(
     "main-style",
@@ -10,7 +10,7 @@ function twpp_enqueue_scripts() {
   wp_enqueue_script(
     "main-script",
     get_template_directory_uri() . "/dist/js/bundle.js",
-    array();
+    array(),
     false,
     true
   );

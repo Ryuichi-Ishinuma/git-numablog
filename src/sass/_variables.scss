@@ -8,7 +8,12 @@
  *
  * ------------------------------------------------------
 // デフォルトFont Family */
-
+%font-family-base {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+%font-family-ttl {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
 
 
 /* ------------------------------------------------------
@@ -16,3 +21,6 @@
 $color-black: #000000;
 $color-white: #ffffff;
 $color-lightgray: #f7f7f7;
+$color-navy: #052348;
+$color-blue: #0168b6;
+$color-lightblue: #01b4ee;

@@ -7,6 +7,10 @@ const eslint = require("gulp-eslint");
 const autoprefixer = require("gulp-autoprefixer");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
+const browserSync = require("browser-sync");
+
+// PHP用
+const connectPhp = require("gulp-connect-php");
 
 // webpack
 const webpackStream = require("webpack-stream");
@@ -28,7 +32,8 @@ gulp.task("sass", () => {
     .pipe(sass(options))
     .pipe(autoprefixer())
     // .pipe(uglify())
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest('./dist/css/'))
+    .pipe(browserSync.stream())
     //修正の必要あり
     // .pipe(notify({
     //   title: 'Completed compiling Sass!',
@@ -37,7 +42,7 @@ gulp.task("sass", () => {
   );
 });
 
-gulp.task('script', () => {
+gulp.task('script', done => {
   return (
     gulp.src('src/js/*.js')
     // .pipe(babel({
@@ -61,9 +66,23 @@ gulp.task('script', () => {
   );
 });
 
-gulp.task("bundle", () => {
+gulp.task("bundle", done => {
   return webpackStream(webpackConfig, webpack)
   .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('server', done => {
+  connectPhp.server({
+    base: '/'
+  }, done => {
+    browserSync({
+      proxy: 'localhost/numablog.net/'
+    });
+  });
+});
+
+gulp.task('reload', done => {
+  browserSync.reload();
 });
 
 /////////////////////////////////
@@ -71,6 +90,7 @@ gulp.task("bundle", () => {
 /////////////////////////////////
 gulp.task("build", done => {
   gulp.watch("./src/sass/*.scss", gulp.task("sass"));
+  gulp.watch("./**", gulp.task("reload"));
 });
 
 /////////////////////////////////

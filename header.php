@@ -25,40 +25,41 @@
 <!--Adobe Affiliate program -->
 <!-- TradeDoubler site verification 3117251 -->
 
-
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ9FP9Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ9FP9Q" height="0" width="0"   style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <header>
-        <div class="siteinfo">
+    <header class="header">
+        <div class="header__bar siteinfo">
             <?php if ( wp_is_mobile() ) : ?>
-            <div id="nav-drawer">
-                <input id="nav-input" type="checkbox" class="nav-unshown">
-                <label id="nav-open" for="nav-input"><span></span></label>
-                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-                <div id="nav-content">
+            <div class="header__nav-drawer">
+                <input class="header__nav-input nav-unshown" type="checkbox">
+                <label id="header__nav-open" for="nav-input"><span></span></label>
+                <label class="header__nav-close nav-unshown" for="nav-input"></label>
+                <div class="header__nav-content">
                     <h1><a href="<?php echo home_url(); ?>">
                             <?php bloginfo('name'); ?></a></h1>
                     <?php wp_nav_menu( 'theme_location=navigation'); ?>
                 </div>
             </div>
             <?php endif; ?>
-            <div class="container">
-                <h1><a href="<?php echo home_url(); ?>">
-                        <?php bloginfo('name'); ?></a></h1>
 
+            <div class="inner">
+                <h1 class="header__ttl">
+                  <a href="<?php echo home_url(); ?>">
+                    <?php bloginfo('name'); ?>
+                  </a>
+                </h1>
             </div>
         </div>
 
-        <nav>
-            <div class="container">
+        <nav class="header__nav">
+            <div class="inner">
                 <?php wp_nav_menu( 'theme_location=navigation'); ?>
             </div>
         </nav>
