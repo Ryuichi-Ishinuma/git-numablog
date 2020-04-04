@@ -83,12 +83,8 @@ wp_pagenavi();
     </div>
     <!--contents-->
 
-    <div class="blogmenu">
-        <ul>
-            <?php dynamic_sidebar(); ?>
-        </ul>
-    </div>
-    <!--blogmenu-->
+    <!-- サイドバーの読み込み -->
+    <?php get_sidebar(); ?>
 </div>
 <!--container-->
 </div>

@@ -1,13 +1,14 @@
-
+<!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
-<div class="main">
-<div class="container">
+<!-- コンテンツ -->
+<div class="wrapper">
+  <div class="main">
     <div class="contents">
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-            <?php if(function_exists('bcn_display')) {
-    bcn_display(); }?>
+            <?php if(function_exists('bcn_display')) {bcn_display(); }?>
         </div>
+        
         <?php if( is_category() ): ?>
         <p class="archive-title">
             <?php single_cat_title(); ?>
@@ -75,15 +76,11 @@
         </div>
 
     </div><!--contents-->
+  </div>
+  <!-- サイドバーの読み込み -->
+  <?php get_sidebar(); ?>
+</div>
 
 
-
-    <div class="blogmenu">
-        <ul>
-            <?php dynamic_sidebar(); ?>
-        </ul>
-    </div><!--blogmenu-->
-</div><!--container-->
-</div><!--main-->
-
+<!-- フッターの読み込み -->
 <?php get_footer(); ?>

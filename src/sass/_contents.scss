@@ -134,18 +134,18 @@ article .excerpt img {
 }
 
 /* メニュー */
-.blogmenu ul {
+.sidebar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.blogmenu .widget {
+.sidebar .widget {
   background: #fff;
   margin-bottom: 30px;
 }
 
-.blogmenu .widgettitle {
+.sidebar .widgettitle {
   background: #0a8fa5;
   color: #fff;
   font-size: 18px;
@@ -154,14 +154,14 @@ article .excerpt img {
   text-align: center;
 }
 
-.blogmenu .widget .wpp-thumbnail {
+.sidebar .widget .wpp-thumbnail {
   height: auto;
   margin-bottom: 20px;
   object-fit: cover;
   width: 100%;
 }
 
-.blogmenu li a {
+.sidebar li a {
   color: #666666;
   display: block;
   line-height: 1.8;
@@ -171,30 +171,30 @@ article .excerpt img {
   text-decoration: none;
 }
 
-.blogmenu li a:hover {
+.sidebar li a:hover {
   text-decoration: underline;
 }
 
-.blogmenu li {
+.sidebar li {
   font-size: 14px;
   color: #000;
 }
 
-.blogmenu li ul li {
+.sidebar li ul li {
   border-bottom: 5px solid #f7f7f7;
   margin: 0;
   padding: 20px;
 }
-.blogmenu ul .widget_categories li {
+.sidebar ul .widget_categories li {
   display: flex;
 }
-.blogmenu ul .widget_categories li a {
+.sidebar ul .widget_categories li a {
   margin-right: 10px;
 }
-.blogmenu ul .widget_archive li {
+.sidebar ul .widget_archive li {
   display: flex;
 }
-.blogmenu ul .widget_archive li a {
+.sidebar ul .widget_archive li a {
   margin-right: 10px;
 }
 
@@ -317,13 +317,13 @@ p.more a:hover {
 
 /* start タブレットサイズ */
 @media (max-width: 1000px) {
-  .blogmenu {
+  .sidebar {
     width: 60%;
   }
 }
 /* start スマホサイズ */
 @media (max-width: 600px) {
-  .blogmenu {
+  .sidebar {
     width: 100%;
   }
   .container .archive-title {

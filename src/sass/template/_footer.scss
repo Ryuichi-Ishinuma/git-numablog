@@ -1,82 +1,126 @@
 /* フッター */
-footer {
-  background: #0a8fa5;
+.footer {
+  background: $color-navy;
   overflow: hidden;
+  &__contents {
+    padding: 0;
+  }
+  &__aside {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 12px;
+        color: $color-lightblue;
+        padding: 10px;
+
+        a {
+          color: $color-lightblue;
+          line-height: 1.8;
+          font-size: 1.6rem;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          text-decoration: none;
+          padding: 2rem;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    background: $color-navy;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .footer__box {
+      border: 1px solid $color-lightblue;
+      padding: 8rem 0;
+      margin: 0 auto;
+      width: 70%;
+    }
+
+    h4 {
+      color: $color-lightblue;
+      font-size: 3.6rem;
+      font-weight: bold;
+      @extend %font-family-ttl;
+      letter-spacing: 0.1em;
+      margin-bottom: 4rem;
+    }
+    .contact__txt {
+      color: $color-lightblue;
+      font-size: 1.8rem;
+      letter-spacing: 0.1em;
+      line-height: 1.5;
+      margin: 0 4rem 4rem;
+    }
+    a {
+      display: block;
+      margin: 2rem auto 0;
+      transition: all 0.3s;
+      width: 24rem;
+      cursor: pointer;
+
+      .contact__btn {
+        padding: 2rem;
+        border: 1px solid $color-lightblue;
+
+        .btn__txt {
+          color: $color-lightblue;
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
+    }
+    a:hover {
+      background: $color-blue;
+    }
+  }
+
+  &__bar {
+    color: $color-lightblue;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  &__menu {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      text-align: center;
+      li {
+        a {
+          color: $color-lightblue;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+      li::before {
+        content: "|";
+        padding: 0 0.6em;
+      }
+      li:first-child::before {
+        content: "";
+        padding: 0;
+      }
+      .sub-menu {
+        display: none;
+      }
+    }
+  }
 }
 
-footer .footer-category aside {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#footer-menu ul {
-  text-align: center;
-  margin: 10px 0;
-  padding: 0;
-}
-
-#footer-menu ul li {
-  display: inline;
-  list-style: outside none none;
-}
-
-#footer-menu ul li::before {
-  content: "|";
-  padding: 0 0.6em;
-}
-
-#footer-menu ul li:first-child::before {
-  content: "";
-  padding: 0;
-}
-
-#footer-menu ul .sub-menu {
-  display: none;
-}
-
-#footer-menu ul a {
-  color: #fff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-#footer-menu ul a:hover {
-  text-decoration: underline;
-}
-
-footer aside ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer aside ul li {
-  font-size: 12px;
-  color: #fff;
-  padding: 10px;
-}
-
-footer aside ul li a {
-  color: #fff;
-  line-height: 1.8;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.1px;
-  text-decoration: none;
-  padding: 10px;
-}
-
-footer aside ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer_bar {
-  background: #0a8fa5;
-  border-top: 1px solid #f7f7f7;
-  color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
 
 @media (max-width: 639px) {
   footer aside {
@@ -99,33 +143,33 @@ footer aside ul li a:hover {
 }
 // ------------------------------------------------------
 /* コメント */
-#comments footer {
-  background: none;
-  margin: 0;
-  color: #000;
-  font-size: 12px;
-}
-
-#comments footer a {
-  color: #000;
-}
-
-#comments footer div {
-  display: inline;
-}
-
-#comments ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#comments article {
-  border: dotted 1px #aaaaaa;
-  margin-bottom: 10px;
-  padding: 10px 20px 20px 20px;
-}
-
-#comments .comment-content {
-  margin-left: 30px;
-}
+// #comments footer {
+//   background: none;
+//   margin: 0;
+//   color: #000;
+//   font-size: 12px;
+// }
+//
+// #comments footer a {
+//   color: #000;
+// }
+//
+// #comments footer div {
+//   display: inline;
+// }
+//
+// #comments ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+//
+// #comments article {
+//   border: dotted 1px #aaaaaa;
+//   margin-bottom: 10px;
+//   padding: 10px 20px 20px 20px;
+// }
+//
+// #comments .comment-content {
+//   margin-left: 30px;
+// }

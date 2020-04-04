@@ -2,13 +2,27 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: $color-lightgray;
+  background: #2c2c32;
+  // background: $color-lightgray;
   font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
   font-size: 1.6rem;
 }
-.main {
-  margin-top: 2rem;
-  padding-bottom: 40px;
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  .main {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    width: 80%;
+  }
+
+  // サイドバー
+  .sidebar {
+    margin-top: 31px;
+    width: 20%;
+  }
 }
 
 .container {
@@ -17,26 +31,7 @@ body {
   width: 85%;
 }
 
-/* メディアクエリの設定 */
-@media (min-width: 1000px) {
 
-  /* 二段組み */
-  .container {
-    overflow: hidden;
-    max-width: 1680px;
-  }
-
-  .contents {
-    width: 70%;
-    float: left;
-  }
-
-  .blogmenu {
-    float: left;
-    margin-top: 31px;
-    width: 30%;
-  }
-}
 
 @media (max-width: 600px) {
   .main {
