@@ -17,6 +17,8 @@
       </div>
     </div>
 </footer>
+<!-- スクリプトの読み込み -->
+<script src="dist/js/bundle.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

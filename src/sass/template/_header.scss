@@ -10,6 +10,7 @@ header a {
   text-decoration: none;
 }
 
+
 header .siteinfo {
   background-color: #fff;
   color: #000;
@@ -22,10 +23,10 @@ header .siteinfo a {
 }
 
 header .siteinfo h1 {
-  float: left;
-  margin: 0;
   font-family: 'Arial', sans-serif;
   font-size: 32px;
+  margin: 0;
+  text-align: center;
 }
 
 header nav {

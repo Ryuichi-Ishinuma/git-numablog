@@ -109,14 +109,14 @@ header .siteinfo a {
 }
 
 header .siteinfo h1 {
-  float: left;
-  margin: 0;
   font-family: 'Arial', sans-serif;
   font-size: 32px;
+  margin: 0;
+  text-align: center;
 }
 
 header nav {
-  /* background: #0a8fa5; */
+  /* background-color: #252526; */
   background-color: #052348;
 }
 
