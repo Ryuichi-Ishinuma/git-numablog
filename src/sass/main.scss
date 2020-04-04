@@ -10,9 +10,21 @@
 /////////////////////////////////
 @import "_reset";
 
+/////////////////////////////////
+// 定義スタイル
+/////////////////////////////////
+@import '_variables'; // 変数定義
 
 /////////////////////////////////
 // モジュール
 /////////////////////////////////
 @import "./template/_header";
+@import "./template/_nav";
+@import "./template/_sidebar";
 @import "./template/_footer";
+
+@import "_layout";
+@import "_component";
+@import "_contents";
+@import "_contact";
+@import "_kaereba";

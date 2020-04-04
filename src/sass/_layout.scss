@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+.main {
+  background: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+/* メディアクエリの設定 */
+@media (min-width: 1000px) {
+
+  /* 二段組み */
+  .container {
+    overflow: hidden;
+    max-width: 1680px;
+  }
+
+  .contents {
+    width: 70%;
+    float: left;
+  }
+
+  .blogmenu {
+    float: left;
+    margin-top: 31px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin-top: 65px;
+    padding-top: 20px;
+  }
+  .container {
+    width: 95%;
+  }
+}

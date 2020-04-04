@@ -27,13 +27,13 @@ gulp.task("sass", () => {
     }))
     .pipe(sass(options))
     .pipe(autoprefixer())
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/css/*.css'))
+    // .pipe(uglify())
+    .pipe(gulp.dest('./dist/css/'));
     //修正の必要あり
-    .pipe(notify({
-      title: 'Completed compiling Sass!',
-      sound: 'Bacco'
-    }))
+    // .pipe(notify({
+    //   title: 'Completed compiling Sass!',
+    //   sound: 'Bacco'
+    // }))
   );
 });
 
@@ -64,6 +64,13 @@ gulp.task('script', () => {
 gulp.task("bundle", () => {
   return webpackStream(webpackConfig, webpack)
   .pipe(gulp.dest('dist/js'));
+});
+
+/////////////////////////////////
+//sassファイルが変更され保存されるたびにコンパイル処理を実行
+/////////////////////////////////
+gulp.task("build", done => {
+  gulp.watch("./src/sass/*.scss", gulp.task("sass"));
 });
 
 /////////////////////////////////

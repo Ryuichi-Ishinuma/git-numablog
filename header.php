@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <meta name="description" content="ITやWeb系の知識、スキル、ツールを中心に、WebデザインやWebマーケティング関連の情報を発信中。<br>ITやWeb初心者に分かりやすく丁寧に解説します。">
-    <meta name="author" content="Ryuichi Ishinuma">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link href="https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type=" text/css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/main.css">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,19 +25,7 @@
 <!--Adobe Affiliate program -->
 <!-- TradeDoubler site verification 3117251 -->
 
-<!-- Global site tag (gtag.js) - Google Analytics
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145053996-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-145053996-1');
-
-</script>-->
 <?php wp_head(); ?>
 </head>
 

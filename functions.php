@@ -1,4 +1,5 @@
 <?php
+include(dirname(__FILE__) . "/functions/_settings.php");
 
 // ウィジェット
 register_sidebar('サイドバー1');
@@ -22,9 +23,7 @@ function my_more($more) {
 add_filter('excerpt_more','my_more');
 
 //投稿サムネイルの有効化
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 //フッターメニュー
 register_nav_menu('footer_menu','フッターメニュー');
-
-

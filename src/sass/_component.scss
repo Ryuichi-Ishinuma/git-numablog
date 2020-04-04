@@ -1,0 +1,116 @@
+/* パンくずリスト */
+.breadcrumbs {
+  color: #777;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.breadcrumbs a {
+  color: #777;
+}
+
+/* コメント投稿フォーム */
+#respond p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+#respond label {
+  font-size: 14px;
+}
+
+#respond input,
+#respond textarea {
+  width: 100%;
+  padding: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#respond input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid #000;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-appearance: none;
+  transition: all 0.3s;
+}
+
+#respond input[type="submit"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#respond .required {
+  color: #ff0000;
+}
+
+/* ページネーション */
+.pager {
+  width: 100%;
+  text-align: center;
+}
+
+.pager .wp-pagenavi {
+  display: inline-block;
+  margin: 20px 0 20px 0;
+}
+
+.wp-pagenavi span.pages {
+  background: #fff none repeat scroll 0 0;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
+  color: #000;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.wp-pagenavi span.current {
+  background: #333 none repeat scroll 0 0;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
+  color: #fbf8f5;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.pager .wp-pagenavi a {
+  background: #fff none repeat scroll 0 0;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
+  color: #000;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.pager .wp-pagenavi a:hover {
+  background-color: #0a8fa5;
+  border-color: #0a8fa5;
+  color: #fff;
+  transition: all .3s;
+}

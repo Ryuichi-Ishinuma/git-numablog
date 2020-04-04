@@ -97,3 +97,35 @@ footer aside ul li a:hover {
     border-bottom: 1px solid #fff;
   }
 }
+// ------------------------------------------------------
+/* コメント */
+#comments footer {
+  background: none;
+  margin: 0;
+  color: #000;
+  font-size: 12px;
+}
+
+#comments footer a {
+  color: #000;
+}
+
+#comments footer div {
+  display: inline;
+}
+
+#comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments article {
+  border: dotted 1px #aaaaaa;
+  margin-bottom: 10px;
+  padding: 10px 20px 20px 20px;
+}
+
+#comments .comment-content {
+  margin-left: 30px;
+}

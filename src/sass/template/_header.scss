@@ -33,3 +33,33 @@ header nav {
   /* background: #0a8fa5; */
   background-color: #052348;
 }
+
+@media (max-width: 600px) {
+  header {
+    top: 0;
+    left: 0;
+   padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 24;
+  }
+  header .siteinfo {
+    background: #0b8fa5;
+    box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .25);
+  }
+  header .siteinfo #nav-open span,
+  header .siteinfo #nav-open span::before,
+  header .siteinfo #nav-open span::after {
+    background: #fff;
+  }
+  header .siteinfo h1 {
+    float: none;
+    text-align: center;
+  }
+  header .siteinfo .container h1 a {
+    color: #fff;
+  }
+  header .contents {
+    padding-top: 80px;
+  }
+}
