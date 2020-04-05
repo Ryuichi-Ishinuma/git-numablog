@@ -26,4 +26,10 @@
 @import "_component";
 @import "_contents";
 @import "_contact";
-@import "_kaereba";
+
+/////////////////////////////////
+// パーツ
+/////////////////////////////////
+@import "./parts/_search";
+@import "./parts/_404";
+@import "./parts/_kaereba";

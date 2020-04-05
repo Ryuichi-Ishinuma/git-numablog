@@ -1,16 +1,78 @@
 <!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
+<!-- セレクション記事を3つ掲載する -->
+<section class="selected">
+  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+      <?php if(function_exists('bcn_display')) {bcn_display(); }?>
+  </div>
+  <div class="selected__ttl">
+    <span>SELECTED ARTICLE</span>
+  </div>
+  <ul class="selected__list">
+    <li class="selected__item">
+      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/'); ?>">
+        <div class="item__thumb">
+          <?php if( has_post_thumbnail() ): ?>
+            <?php the_post_thumbnail( 'medium' ); ?>
+          <?php endif; ?>
+        </div>
+        <div class="item__ttl"><?php the_title(); ?></div>
+        <div class="item__postinfo">
+          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+              <?php echo get_the_date('Y.m.d'); ?>
+          </time>
+          <span class="item__category">
+              <?php the_category(','); ?>
+          </span>
+        </div>
+      </a>
+    </li>
+
+    <li class="selected__item">
+      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/', true); ?>">
+        <div class="item__thumb">
+          <?php if( has_post_thumbnail() ): ?>
+            <?php the_post_thumbnail( 'medium' ); ?>
+          <?php endif; ?>
+        </div>
+        <div class="item__ttl"><?php the_title(); ?></div>
+        <div class="item__postinfo">
+          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+              <?php echo get_the_date('Y.m.d'); ?>
+          </time>
+          <span class="item__category">
+              <?php the_category(','); ?>
+          </span>
+        </div>
+      </a>
+    </li>
+
+    <li class="selected__item">
+      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/'); ?>">
+        <div class="item__thumb">
+          <?php if( has_post_thumbnail() ): ?>
+            <?php the_post_thumbnail( 'medium' ); ?>
+          <?php endif; ?>
+        </div>
+        <div class="item__ttl"><?php the_title(); ?></div>
+        <div class="item__postinfo">
+          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+              <?php echo get_the_date('Y.m.d'); ?>
+          </time>
+          <span class="item__category">
+              <?php the_category(','); ?>
+          </span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</section>
+
 <!-- コンテンツ -->
 <div class="wrapper">
-  <div class="main">
+  <section class="main">
     <div class="contents">
-      <!-- セレクション記事を3つ掲載する -->
-      <div class="contents__selected">
-      </div>
-      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-          <?php if(function_exists('bcn_display')) {bcn_display(); }?>
-      </div>
       <div class="contents__list">
           <?php if( is_category() ): ?>
             <p class="archive-title">
@@ -51,7 +113,7 @@
         <?php if(function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
       </div>
     </div><!--contents-->
-  </div>
+  </section>
   <!-- サイドバーの読み込み -->
   <?php get_sidebar(); ?>
 </div>

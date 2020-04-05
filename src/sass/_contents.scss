@@ -1,24 +1,49 @@
+/* selectionされた記事 */
+.selected {
+  // background: $color-white;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 5%;
+  width: 100%;
+  margin-bottom: 8rem;
 
-/* TOPページ 記事リスト */
-.contents {
+  /* パンくずリスト */
+  .breadcrumbs {
+    color: $color-black;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  &__ttl {
+    color: $color-black;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    span {
+      border-bottom: 2px solid $color-navy;
+      font-size: 3.6rem;
+      font-weight: bold;
+      padding-bottom: 1rem;
+    }
+  }
+
   &__list {
     display: flex;
-    flex-wrap: wrap;
   }
   &__item {
     box-sizing: border-box;
     display: inline-block;
     line-height: 1.8;
-    margin-bottom: 6rem;
-    margin-right: 5%;
     padding-bottom: 2rem;
-    width: 45%;
+    width: 30%;
 
     a {
       display: block;
       height: auto;
       overflow: hidden;
-      padding: 1rem;
+      padding: 1rem 1rem 0;
       text-decoration: none;
 
       .item__thumb {
@@ -41,6 +66,66 @@
         color: $color-black;
         display: flex;
         font-size: 1.4rem;
+        font-weight: bold;
+        padding: 0 1rem;
+        text-decoration: none;
+      }
+      &__date {
+        color: $color-lightgray;
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__item:nth-child(3n- 1) {
+    margin: 0 5%;
+  }
+}
+
+
+/* TOPページ 記事リスト */
+.contents {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1.8;
+    margin-right: 5%;
+    margin-bottom:6rem;
+    padding-bottom: 2rem;
+    width: 45%;
+
+    a {
+      display: block;
+      height: auto;
+      overflow: hidden;
+      padding: 1rem 1rem 0;
+      text-decoration: none;
+
+      .item__thumb {
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+          vertical-align: bottom;
+        }
+      }
+      .item__ttl {
+        font-weight: bold;
+        margin: 2rem 0 1rem;
+      }
+    }
+  .item__postinfo {
+    display: flex;
+      a {
+        color: $color-black;
+        display: flex;
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 0 1rem;
         text-decoration: none;
       }
       &__date {

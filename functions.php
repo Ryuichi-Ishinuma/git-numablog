@@ -21,6 +21,3 @@ add_filter('excerpt_more','my_more');
 
 //投稿サムネイルの有効化
 add_theme_support( 'post-thumbnails' );
-
-//フッターメニュー
-register_nav_menu('footer_menu','フッターメニュー');
