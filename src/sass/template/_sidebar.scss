@@ -1,5 +1,8 @@
-
+/////////////////////////////////
+//
 // サイドバー
+//
+/////////////////////////////////
 .sidebar {
   margin-top: 30px;
   width: 25%;
@@ -40,83 +43,70 @@
       text-align: left;
     }
   }
+  /////////////////////////////////
+  //
+  // ウィジェット
+  //
+  /////////////////////////////////
+  .widget {
+    background: #fff;
+    margin-bottom: 30px;
+  }
+
+  .widgettitle {
+    background: #0a8fa5;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .widget .wpp-thumbnail {
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  li a {
+    color: #666666;
+    display: block;
+    line-height: 1.8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+
+  li {
+    font-size: 14px;
+    color: #000;
+  }
+
+   li ul li {
+    border-bottom: 5px solid #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+   ul .widget_categories li {
+    display: flex;
+  }
+   ul .widget_categories li a {
+    margin-right: 10px;
+  }
+   ul .widget_archive li {
+    display: flex;
+  }
+   ul .widget_archive li a {
+    margin-right: 10px;
+  }
 }
 
-
-/* サイドバー プロフィール */
-.profileimg {
-  border-radius: 50%;
-}
-
-.textwidget p {
-  color: #333333;
-  margin: 20px;
-  padding-bottom: 20px;
-}
-
-.sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sidebar .widget {
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-.sidebar .widgettitle {
-  background: #0a8fa5;
-  color: #fff;
-  font-size: 18px;
-  margin: 0;
-  padding: 15px 10px;
-  text-align: center;
-}
-
-.sidebar .widget .wpp-thumbnail {
-  height: auto;
-  margin-bottom: 20px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.sidebar li a {
-  color: #666666;
-  display: block;
-  line-height: 1.8;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.1px;
-  text-decoration: none;
-}
-
-.sidebar li a:hover {
-  text-decoration: underline;
-}
-
-.sidebar li {
-  font-size: 14px;
-  color: #000;
-}
-
-.sidebar li ul li {
-  border-bottom: 5px solid #f7f7f7;
-  margin: 0;
-  padding: 20px;
-}
-.sidebar ul .widget_categories li {
-  display: flex;
-}
-.sidebar ul .widget_categories li a {
-  margin-right: 10px;
-}
-.sidebar ul .widget_archive li {
-  display: flex;
-}
-.sidebar ul .widget_archive li a {
-  margin-right: 10px;
-}
 
 /* start タブレットサイズ */
 @media (max-width: 1000px) {
