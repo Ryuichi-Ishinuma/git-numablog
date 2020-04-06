@@ -9,11 +9,11 @@
         <p class="profile__name">numa</p>
         <p class="profile__role">Webデザイナー</p>
         <div class="profile__intro">デジタルエージェンシーのWebデザイナーとして働いています。<br>
-          主にWebデザインやプログラミング関連の情報を発信しています。<br>
+          主にWebデザインやプログラミング、Web関連の情報を発信しています。<br>
           <br>
           現在はフロントエンドエンジニアとしてスキルアップを目指し、JavaScript/Vue.jsを学習中。<br>
-          <br>
-        趣味は映画・写真・旅。好きなウイスキーはラフロイグ。</div>
+          趣味は映画・写真・旅。<br>
+          好きなウイスキーはラフロイグ。</div>
       </div>
 
 
