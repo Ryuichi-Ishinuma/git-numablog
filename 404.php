@@ -1,10 +1,23 @@
 <!-- 404.php -->
 <?php get_header(); ?>
-<div class="container">
-<h2>Nothing to see here</h2>
-<p>We can't find this page / 404 error/</p>
-<p>You might mistake type this page URL ： <span class="error_msg"> http://<?php echo esc_html($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']); ?> </span></p>
-<p><a href="<?php echo home_url(); ?>">HOME</a></p>
+
+<div class="not-found">
+  <div class="not-found__box">
+    <div class="not-found__ttl">
+      <h2>404 Not Found</h2>
+      <p>ページが見つかりませんでした</p>
+    </div>
+    <div class="not-found__txt">
+      <p>お探しのページは、移動または削除された可能性があります。</p>
+      <p>下記、ボタンからTOPページへ戻ってください。</p>
+    </div>
+
+    <a href="<?php echo home_url(); ?>">
+      <div class="not-found__btn">
+        <span class="btn__txt">TOP Page</span>
+      </div>
+    </a>
+  </div>
 </div>
 
 <?php get_footer(); ?>

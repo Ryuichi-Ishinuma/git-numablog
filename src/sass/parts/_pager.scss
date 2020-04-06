@@ -1,0 +1,52 @@
+/* ページネーション */
+.pager {
+  width: 100%;
+  text-align: center;
+  .wp-pagenavi {
+    display: inline-block;
+    margin: 2rem 0;
+  }
+  .pages,
+  .current {
+    background: $color-navy none repeat scroll 0 0;
+    border: 3px solid $color-lightblue !important;
+    color: $color-lightblue;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .page {
+    background: $color-blue none repeat scroll 0 0;
+    border: 3px solid $color-lightblue;
+    color: $color-lightblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all .3s;
+  }
+  .page:hover {
+    background: $color-navy;
+    border: 3px solid $color-lightblue;
+  }
+  .previouspostslink,
+  .nextpostslink {
+    background: $color-blue none repeat scroll 0 0;
+    border: 3px solid $color-lightblue;
+    color: $color-lightblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all .3s;
+  }
+  .previouspostslink:hover,
+  .nextpostslink:hover {
+    background: $color-navy;
+    border: 3px solid $color-lightblue;
+  }
+}

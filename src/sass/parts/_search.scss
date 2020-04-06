@@ -1,0 +1,71 @@
+
+//searchformのスタイル
+.contents {
+  .search {
+    text-align: center;
+    padding: 8rem;
+    &__ttl {
+      color: $color-black;
+      margin-bottom: 4rem;
+
+      span {
+        font-size: 3.6rem;
+        font-weight: bold;
+        padding-bottom: 1rem;
+      }
+    }
+    &__keyword {
+
+      span {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.searchform {
+  background: $color-navy;
+  box-sizing: border-box;
+  height: 42px;
+  margin-bottom: 4rem;
+  position: relative;
+
+  input[type="search"] {
+    appearance: none;
+    background: $color-navy;
+    border: none;
+    color: $color-lightblue;
+    font-size: 1.6rem;
+    height: 100%;
+    outline: 3px solid $color-lightblue;
+    padding: 1.2rem 1rem;
+    position: relative;
+    width: 100%;
+    &::placeholder {
+      color: $color-lightblue;
+      letter-spacing: 0.1em;
+    }
+    input[type="search"]:focus {
+      background: $color-navy;
+      color: $color-lightblue;
+    }
+  }
+  button {
+    background: $color-navy;
+    border: none;
+    display: block;
+    height: 100%;
+    outline: 3px solid $color-lightblue;
+    padding: 1rem 1.55rem;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    .fa-search {
+      color: $color-lightblue;
+      cursor: pointer;
+      text-rendering: auto;
+      display: inline-block;
+    }
+  }
+}

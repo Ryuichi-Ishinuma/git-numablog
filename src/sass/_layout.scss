@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  // background: #2c2c32;
+  background: $color-white;
+  color: $color-black;
+  @extend %font-family-ttl;
+  font-feature-settings: "palt";
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+  word-break: break-all;
+}
+a {
+  color: $color-black;
+}
+.wrapper {
+  background: $color-white;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 2rem;
+  width: 100%;
+  .main {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+    width: 75%;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+
+
+@media (max-width: 600px) {
+  .main {
+    margin-top: 65px;
+    padding-top: 20px;
+  }
+  .container {
+    width: 95%;
+  }
+}
