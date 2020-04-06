@@ -67,6 +67,36 @@
       font-weight: bold;
     }
   }
+  &__popular-item {
+    background: $color-navy;
+    border: 3px solid $color-lightblue;
+    margin-bottom: 1rem;
+
+    &:nth-child(1) {
+      margin-top: 1rem;
+    }
+    .popular-list__thumb {
+      text-align: center;
+      padding: 1.2rem 1rem;
+      a {
+        display: block;
+        img {
+          display: inline-block;
+          width: 100%;
+          object-fit: cover;
+          vertical-align: middle;
+        }
+      }
+    }
+    .popular-list__txt {
+      padding: 1.2rem 1rem;
+      a {
+        color: $color-lightblue;
+        display: block;
+        font-size: 1.4rem;
+      }
+    }
+  }
 
 
   /////////////////////////////////

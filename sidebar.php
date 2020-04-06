@@ -40,13 +40,15 @@
 
       $ranking_counter = 0;
       ?>
-      <ul class="sidebar__popular-list">
-        <li class="popular-list__item">
+      <dl class="sidebar__popular-item">
+        <dt class="popular-list__thumb">
           <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail("thumbnail"); ?></a>
+        </dt>
+        <dt class="popular-list__txt">
           <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-        </li>
-        <?php endwhile; ?>
-      </ul>
+        </dt>
+      </dl>
+      <?php endwhile; ?>
   </div>
 
 
