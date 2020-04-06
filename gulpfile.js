@@ -1,6 +1,7 @@
 //gulpプラグインの読み込み
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const cleancss = require("gulp-clean-css");
 const notify = require("gulp-notify");
 const plumber = require("gulp-plumber");
 const eslint = require("gulp-eslint");
@@ -31,7 +32,7 @@ gulp.task("sass", () => {
     }))
     .pipe(sass(options))
     .pipe(autoprefixer())
-    // .pipe(uglify())
+    .pipe(cleancss())
     .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.stream())
     //修正の必要あり
@@ -66,6 +67,13 @@ gulp.task('script', done => {
   );
 });
 
+/////////////////////////////////
+//sassファイルが変更され保存されるたびにコンパイル処理を実行
+/////////////////////////////////
+gulp.task("build", done => {
+  gulp.watch("./src/sass/*.scss", gulp.task("sass"));
+});
+
 gulp.task("bundle", done => {
   return webpackStream(webpackConfig, webpack)
   .pipe(gulp.dest('dist/js'));
@@ -85,15 +93,8 @@ gulp.task('reload', done => {
   browserSync.reload();
 });
 
-/////////////////////////////////
-//sassファイルが変更され保存されるたびにコンパイル処理を実行
-/////////////////////////////////
-gulp.task("build", done => {
-  gulp.watch("./src/sass/*.scss", gulp.task("sass"));
-  gulp.watch("./**", gulp.task("reload"));
-});
 
 /////////////////////////////////
 //デフォルトタスク
 /////////////////////////////////
-gulp.task("default", gulp.parallel("sass","bundle"));
+gulp.task("default", gulp.parallel("sass","bundle", "server","build"));

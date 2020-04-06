@@ -7,6 +7,9 @@
   margin-top: 30px;
   width: 25%;
 
+  /////////////////////////////////
+  // プロフィール欄
+  /////////////////////////////////
 
   .profile {
     background: $color-navy;
@@ -43,6 +46,29 @@
       text-align: left;
     }
   }
+
+  /////////////////////////////////
+  // 人気記事
+  /////////////////////////////////
+  &__popular {
+    background: $color-white;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+  }
+  &__header {
+    background: $color-navy;
+    border: 3px solid $color-lightblue;
+    box-sizing: border-box;
+    color: $color-lightblue;
+    letter-spacing: 0.1em;
+    padding: 1.2rem 1rem;
+    .header__ttl {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+
+
   /////////////////////////////////
   //
   // ウィジェット

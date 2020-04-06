@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp build"
+    "build": "npx gulp"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-connect-php": "^1.0.3",
     "gulp-eslint": "^6.0.0",
     "gulp-notify": "^3.2.0",
