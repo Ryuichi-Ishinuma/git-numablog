@@ -34,11 +34,11 @@
   input[type="search"] {
     appearance: none;
     background: $color-navy;
-    border: none;
+    border: 3px solid $color-lightblue;
     color: $color-lightblue;
     font-size: 1.6rem;
     height: 100%;
-    outline: 3px solid $color-lightblue;
+    outline: none;
     padding: 1.2rem 1rem;
     position: relative;
     width: 100%;
@@ -53,10 +53,10 @@
   }
   button {
     background: $color-navy;
-    border: none;
+    border: 3px solid $color-lightblue;
     display: block;
     height: 100%;
-    outline: 3px solid $color-lightblue;
+    outline: none;
     padding: 1rem 1.55rem;
     position: absolute;
     bottom: 0%;

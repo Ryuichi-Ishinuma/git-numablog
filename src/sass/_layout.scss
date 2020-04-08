@@ -18,9 +18,9 @@ a {
 .wrapper {
   background: $color-white;
   display: flex;
+  padding: 2rem 4rem;
   margin: 0 auto;
   max-width: 1300px;
-  width: 100%;
   .main {
     margin-top: 2rem;
     padding-bottom: 4rem;
@@ -28,13 +28,11 @@ a {
   }
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 85%;
-}
-
-
+// .container {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 85%;
+// }
 
 @media (max-width: 600px) {
   .main {

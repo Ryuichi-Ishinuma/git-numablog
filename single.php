@@ -1,17 +1,12 @@
 <?php get_header(); ?>
 
-
-<div class="main">
-<div class="container">
+<div class="wrapper">
+  <section class="main">
     <div class="contents">
+      <article class="singlepage" <?php post_class(); ?>>
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-            <?php if(function_exists('bcn_display'))
-{
-bcn_display();
-}?>
+            <?php if(function_exists('bcn_display')){ bcn_display(); }?>
         </div>
-
-
         <?php if( is_category() ): ?>
         <h2 class="archive-title">
             <?php single_cat_title(); ?>
@@ -24,58 +19,32 @@ bcn_display();
         </h1>
         <?php endif; ?>
 
-        <?php if(have_posts()): while(have_posts()):
-the_post(); ?>
+        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+          <?php if( is_single() ): ?>
+          <h1 class="singlepage__ttl"><?php the_title(); ?></h1>
+          <?php else: ?>
+          <h1><a href="<?php the_permalink(); ?>">
+                  <?php the_title(); ?></a></h1>
+          <?php endif; ?>
 
-        <article class="singlepage" <?php post_class(); ?>>
-            <?php if( is_single() ): ?>
-            <h1 class="pagetitle"><?php the_title(); ?></h1>
-            <?php else: ?>
-            <h1><a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?></a></h1>
-            <?php endif; ?>
+          <div class="singlepage__postinfo">
+              <time class="postinfo__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                  <?php echo get_the_date('Y/m/d'); ?>
+              </time>
+              <span class="postinfo__category">
+                  <?php the_category(','); ?>
+              </span>
+          </div>
+          <?php the_content(); ?>
 
-            <div class="postinfo">
-                <time datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                    <?php echo get_the_date('Y/m/d'); ?>
-                </time>
-
-                <span class="postcat">
-                    <?php the_category(','); ?>
-                </span>
-
-                <span class="postcom">
-                    <i class="fa fa-comment"></i>
-                    <a href="<?php comments_link(); ?>">
-                        <?php comments_number(
-'コメント',
-'コメント(１件)',
-'コメント(%件)'
-); ?>
-                    </a>
-                </span>
-            </div>
-
-            <?php the_content(); ?>
-
-            <?php comments_template(); ?>
-        </article>
-
-        <?php endwhile; endif; ?>
-
+          <?php comments_template(); ?>
+      </article>
+      <?php endwhile; endif; ?>
     </div>
-    <!--contents-->
-
-    <div class="blogmenu">
-        <ul>
-            <?php dynamic_sidebar(); ?>
-        </ul>
-    </div>
-    <!--blogmenu-->
-
+  </section>
+  <!-- サイドバーの読み込み -->
+  <?php get_sidebar(); ?>
 </div>
-<!--container-->
-</div><!--main-->
 
 
 <?php get_footer(); ?>

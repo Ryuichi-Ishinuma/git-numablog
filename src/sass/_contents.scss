@@ -214,55 +214,6 @@
   width: 95%;
 }
 
-/* 投稿記事について */
-.contents .singlepage {
-  padding-bottom: 20px;
-  width: 95%;
-}
-
-.contents .singlepage .article-title {
-  background: #fff;
-  border: none;
-  font-size: 26px;
-  margin: 20px 0;
-  padding: 0 20px;
-}
-
-/* カテゴリーページタイトル */
-.contents .singlepage .pagetitle {
-  padding: 0 20px;
-}
-
-/* 記事ページタイトル */
-.contents .singlepage p {
-  margin: 16px 0;
-  padding: 0 20px;
-}
-
-.contents .singlepage .excerpt {
-  padding-bottom: 20px;
-}
-
-.contents .singlepage .more {
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 1000px) {
-  .contents article h2 {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 648px) {
-  .contents article {
-    width: auto;
-    display: block;
-  }
-
-  .contents article h2 {
-    font-size: 18px;
-  }
-}
 
 /* 記事の概要 */
 p.more {
