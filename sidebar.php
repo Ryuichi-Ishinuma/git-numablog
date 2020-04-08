@@ -16,7 +16,7 @@
 
   <div class="sidebar__popular">
     <div class="sidebar__header">
-      <h4 class="header__ttl">POPULAR</h4>
+      <h4 class="header__ttl">Popular</h4>
     </div>
     <?php
     // views post metaで記事のPV情報を取得する
@@ -53,6 +53,6 @@
 
 
   <ul class="sidebar__widget">
-      <?php dynamic_sidebar(); ?>
-  </ul>
+    <?php dynamic_sidebar(); ?>
+ </ul>
 </section><!--blogmenu-->

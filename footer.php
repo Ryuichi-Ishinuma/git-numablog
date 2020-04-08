@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer__contact">
     <div class="footer__box">
-      <h4>CONTACT</h4>
+      <h4>Contact</h4>
       <p class="contact__txt">ご意見、ご相談、お仕事のご依頼などお気軽にお問い合わせください。</p>
       <a href="<?php echo home_url(); ?>/form/">
         <div class="contact__btn">
@@ -9,6 +9,25 @@
         </div>
       </a>
     </div>
+  </div>
+  <div class="footer__sns">
+    <ul class="sns__list">
+      <li>
+        <a href="https://twitter.com/ryu_webdesi31" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/ryuichi.ishinuma" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Ryuichi-Ishinuma" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
   </div>
   <div class="footer__bar">
     <div class="inner">

@@ -4,7 +4,7 @@
 //
 /////////////////////////////////
 .sidebar {
-  margin-top: 30px;
+  margin-top: 3rem;
   width: 25%;
 
   /////////////////////////////////
@@ -51,7 +51,6 @@
   // 人気記事
   /////////////////////////////////
   &__popular {
-    background: $color-white;
     box-sizing: border-box;
     margin-bottom: 4rem;
   }
@@ -61,6 +60,7 @@
     box-sizing: border-box;
     color: $color-lightblue;
     letter-spacing: 0.1em;
+    margin-bottom: 1rem;
     padding: 1.2rem 1rem;
     .header__ttl {
       font-size: 1.8rem;
@@ -71,10 +71,6 @@
     background: $color-navy;
     border: 3px solid $color-lightblue;
     margin-bottom: 1rem;
-
-    &:nth-child(1) {
-      margin-top: 1rem;
-    }
     .popular-list__thumb {
       text-align: center;
       padding: 1.2rem 1rem;
@@ -83,13 +79,16 @@
         img {
           display: inline-block;
           width: 100%;
+          height: auto;
           object-fit: cover;
-          vertical-align: middle;
+          vertical-align: bottom;
+          transform: scale3d(1, 1, 1);
+          transition: 0.4s;
         }
       }
     }
     .popular-list__txt {
-      padding: 1.2rem 1rem;
+      padding: 1.2rem 1rem 2.4rem;
       a {
         color: $color-lightblue;
         display: block;
@@ -97,69 +96,52 @@
       }
     }
   }
-
-
   /////////////////////////////////
   //
   // ウィジェット
   //
   /////////////////////////////////
-  .widget {
-    background: #fff;
-    margin-bottom: 30px;
-  }
+  &__widget {
+    box-sizing: border-box;
+    margin-bottom: 4rem;
 
-  .widgettitle {
-    background: #0a8fa5;
-    color: #fff;
-    font-size: 18px;
-    margin: 0;
-    padding: 15px 10px;
-    text-align: center;
-  }
+    .widget_categories,
+    .widget_archive {
+      margin-bottom: 4rem;
 
-  .widget .wpp-thumbnail {
-    height: auto;
-    margin-bottom: 20px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  li a {
-    color: #666666;
-    display: block;
-    line-height: 1.8;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0.1px;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    text-decoration: underline;
-  }
-
-  li {
-    font-size: 14px;
-    color: #000;
-  }
-
-   li ul li {
-    border-bottom: 5px solid #f7f7f7;
-    margin: 0;
-    padding: 20px;
-  }
-   ul .widget_categories li {
-    display: flex;
-  }
-   ul .widget_categories li a {
-    margin-right: 10px;
-  }
-   ul .widget_archive li {
-    display: flex;
-  }
-   ul .widget_archive li a {
-    margin-right: 10px;
+      .widgettitle {
+        background: $color-navy;
+        border: 3px solid $color-lightblue;
+        box-sizing: border-box;
+        color: $color-lightblue;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+        padding: 1.2rem 1rem;
+        text-align: center;
+      }
+      ul {
+        background: $color-navy;
+        border: 3px solid #01b4ee;
+        margin-bottom: 1rem;
+        li {
+          border-bottom: 3px solid $color-lightblue;
+          a {
+            color: $color-lightblue;
+            display: block;
+            padding: 1.2rem 1rem 1.2rem 2.4rem;
+            transition: all 0.3s;
+          }
+          a:hover {
+            background: $color-blue;
+          }
+        }
+        li:last-child {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
 

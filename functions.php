@@ -22,6 +22,7 @@ add_filter('excerpt_more','my_more');
 //投稿サムネイルの有効化
 add_theme_support( 'post-thumbnails' );
 
+
 // 人気記事
 function getPostViews($postID) {
   $count_key = "post_views_count";

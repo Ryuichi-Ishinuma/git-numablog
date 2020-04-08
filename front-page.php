@@ -7,7 +7,7 @@
       <?php if(function_exists('bcn_display')) {bcn_display(); }?>
   </div>
   <div class="selected__ttl">
-    <span>SELECTED ARTICLE</span>
+    <span>Pickup Posts</span>
   </div>
   <ul class="selected__list">
     <li class="selected__item">
@@ -17,7 +17,7 @@
             <?php the_post_thumbnail( 'medium' ); ?>
           <?php endif; ?>
         </div>
-        <div class="item__ttl"><?php the_title(); ?></div>
+        <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
           <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
               <?php echo get_the_date('Y.m.d'); ?>
@@ -36,7 +36,7 @@
             <?php the_post_thumbnail( 'medium' ); ?>
           <?php endif; ?>
         </div>
-        <div class="item__ttl"><?php the_title(); ?></div>
+        <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
           <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
               <?php echo get_the_date('Y.m.d'); ?>
@@ -55,7 +55,7 @@
             <?php the_post_thumbnail( 'medium' ); ?>
           <?php endif; ?>
         </div>
-        <div class="item__ttl"><?php the_title(); ?></div>
+        <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
           <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
               <?php echo get_the_date('Y.m.d'); ?>
@@ -73,6 +73,9 @@
 <div class="wrapper">
   <section class="main">
     <div class="contents">
+      <div class="contents__new-post">
+        <span>New Posts</span>
+      </div>
       <div class="contents__list">
           <?php if( is_category() ): ?>
             <p class="archive-title">
@@ -96,7 +99,7 @@
                   <?php the_post_thumbnail( 'medium' ); ?>
                 <?php endif; ?>
               </div>
-              <div class="item__ttl"><?php the_title(); ?></div>
+              <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
               <div class="item__postinfo">
                   <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
                       <?php echo get_the_date('Y.m.d'); ?>

@@ -52,10 +52,38 @@
       background: $color-blue;
     }
   }
+  &__sns {
+    margin-bottom: 4rem;
+    text-align: center;
+
+    .sns__list {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+
+      li:nth-child(3n - 1) {
+        margin: 0 4rem;
+      }
+
+      a {
+        color: $color-lightblue;
+        display: block;
+        transition: all .2s ease;
+
+        .fab {
+          font-size: 3.6rem;
+          text-align: center;
+        }
+      }
+      a:hover {
+        color: $color-blue;
+      }
+    }
+  }
 
   &__bar {
     color: $color-lightblue;
-    padding: 4rem 0;
+    margin: 4rem 0;
     text-align: center;
   }
   &__menu {
@@ -67,17 +95,31 @@
       li {
         a {
           color: $color-lightblue;
+          display: inline-block;
           font-size: 1.4rem;
           font-weight: bold;
+          position: relative;
           text-decoration: none;
         }
-        a:hover {
-          text-decoration: underline;
+        a::after {
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: $color-lightblue;
+          transform: scale(0, 1);
+          transform-origin: left top;
+          transition: transform .3s;
+        }
+        a:hover::after {
+          transform: scale(1, 1);
         }
       }
       li::before {
         content: "|";
-        padding: 0 0.6em;
+        padding: 0 1em;
       }
       li:first-child::before {
         content: "";
@@ -92,36 +134,3 @@
     font-size: 1.2rem;
   }
 }
-
-// ------------------------------------------------------
-/* コメント */
-// #comments footer {
-//   background: none;
-//   margin: 0;
-//   color: #000;
-//   font-size: 12px;
-// }
-//
-// #comments footer a {
-//   color: #000;
-// }
-//
-// #comments footer div {
-//   display: inline;
-// }
-//
-// #comments ul {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-// }
-//
-// #comments article {
-//   border: dotted 1px #aaaaaa;
-//   margin-bottom: 10px;
-//   padding: 10px 20px 20px 20px;
-// }
-//
-// #comments .comment-content {
-//   margin-left: 30px;
-// }
