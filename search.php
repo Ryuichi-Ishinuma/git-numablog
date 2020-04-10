@@ -7,7 +7,7 @@
     <div class="contents">
       <div class="search">
         <div class="search__ttl">
-          <span>SEARCH</span>
+          <span>Search</span>
         </div>
         <div class="search__keyword">
           <span>検索結果:<?php echo the_search_query(); ?></span>

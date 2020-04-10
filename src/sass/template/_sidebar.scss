@@ -21,13 +21,14 @@
     padding: 4rem 2rem;
 
     &__thumb {
-      text-align: center;
-      margin-bottom: 2rem;
+      height: 150px;
+      width: 150px;
+      margin: 0 auto 2rem;
 
       img {
-        height: 150px;
-        width: 150px;
-        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+        vertical-align: bottom;
       }
     }
     &__name {

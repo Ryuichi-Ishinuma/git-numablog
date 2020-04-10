@@ -1,0 +1,91 @@
+
+ul.socialBtn {
+	margin: 4rem 0;
+	display:flex;
+  li{
+  	list-style: none;
+  	width: 25%;
+  	margin-left: 0;
+
+    a {
+    	display: block;
+    	color: #fff;
+    	text-decoration: none;
+    	line-height: 42px;
+    	letter-spacing: .05em;
+    	font-size: 2.2rem;
+    	text-align: center;
+      transition: all .3s;
+    }
+    a.twitter {
+      border: 3px solid $color-twitter;
+      background: $color-twitter-dark;
+      .fa-twitter {
+        color: $color-twitter;
+      }
+    }
+    a.twitter:hover {
+      background: $color-twitter;
+      .fa-twitter {
+        color: $color-white;
+      }
+    }
+    a.facebook {
+      border: 3px solid  $color-facebook;
+      background: $color-facebook-dark;
+      .fa-facebook-f {
+        color: $color-facebook;
+      }
+    }
+    a.facebook:hover {
+      background: $color-facebook;
+      .fa-facebook-f {
+        color: $color-white;
+      }
+    }
+    a.line {
+      border: 3px solid $color-line;
+      background: $color-line-dark;
+      .fa-line {
+        color: $color-line;
+      }
+    }
+    a.line:hover {
+      background: $color-line;
+      .fa-line {
+        color: $color-white;
+      }
+    }
+    a.pocket {
+      border: 3px solid $color-pocket;
+      background: $color-pocket-dark;
+      .fa-get-pocket {
+        color: $color-pocket;
+      }
+    }
+    a.pocket:hover {
+      background: $color-pocket;
+      .fa-get-pocket {
+        color: $color-white;
+      }
+    }
+    a.rss {
+      border: 3px solid $color-rss;
+      background: $color-rss-dark;
+      .fa-rss {
+        color: $color-rss;
+      }
+    }
+    a.rss:hover {
+      background: $color-rss;
+      .fa-rss {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+
+ul.socialBtn [class^="icon-"]:before,ul.socialBtn [class*=" icon-"]:before {
+	margin-right: 5px;
+}

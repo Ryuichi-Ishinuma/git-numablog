@@ -11,6 +11,9 @@
     <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css"> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/main.css">
 
+    <!-- icomoon SNSシェアボタン用 -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/icomoon/style.css">
+
     <!-- Font Awesome CDN -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 

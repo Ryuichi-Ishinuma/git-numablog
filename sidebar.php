@@ -3,7 +3,9 @@
     <?php get_search_form(); ?>
   </div>
   <div class="profile">
-    <div class="profile__thumb"><img src="/dist/images/"></div>
+    <div class="profile__thumb">
+      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/profile_150×150.png">
+    </div>
     <p class="profile__name">numa</p>
     <p class="profile__role">Webデザイナー</p>
     <div class="profile__intro">デジタルエージェンシーのWebデザイナーとして働いています。<br>
