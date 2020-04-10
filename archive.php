@@ -5,27 +5,7 @@
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
             <?php if(function_exists('bcn_display')){bcn_display(); }?>
         </div>
-
-        <!--カテゴリー名の表示-->
-        <?php if( is_category() ): ?>
-        <h2 class="category__ttl">
-          <?php single_cat_title(); ?>
-        </h2>
-        <?php endif; ?>
-
-        <?php if(is_month() ): ?>
-        <h2 class="archive__ttl">
-            <?php echo get_the_date('Y年n月'); ?>
-        </h2>
-        <?php endif; ?>
-
         <div class="contents__list">
-            <?php if( is_category() ): ?>
-              <p class="archive-title">
-                  <?php single_cat_title(); ?>
-              </p>
-           <?php endif; ?>
-
             <?php if(is_month() ): ?>
             <h2 class="archive-title">
                 <?php echo get_the_date('Y年n月'); ?>
