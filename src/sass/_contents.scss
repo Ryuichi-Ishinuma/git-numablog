@@ -46,6 +46,11 @@
 
       .item__thumb {
         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        img {
+          display: block;
+          transition-duration: .4s;
+        }
       }
       .item__ttl {
         font-weight: bold;
@@ -59,8 +64,14 @@
         }
       }
     }
-    a:hover .item__ttl span {
-      background-size: 100% 100%;
+    a:hover {
+      .item__ttl span {
+        background-size: 100% 100%;
+      }
+      img {
+        transform: scale(1.1);
+        transition-duration: .4s;
+      }
     }
 
   .item__postinfo {
@@ -141,8 +152,10 @@
 
       .item__thumb {
         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
         img {
-
+          display: block;
+          transition-duration: .4s;
         }
       }
       .item__ttl {
@@ -157,8 +170,14 @@
         }
       }
     }
-    a:hover .item__ttl span {
-      background-size: 100% 100%;
+    a:hover {
+      .item__ttl span {
+        background-size: 100% 100%;
+      }
+      img {
+        transform: scale(1.1);
+        transition-duration: .4s;
+      }
     }
   .item__postinfo {
     display: flex;
