@@ -4,9 +4,6 @@
     background-color: $color-navy;
     padding: 4rem 0;
   }
-  &__nav-drawer {
-    display: none;
-  }
   &__ttl {
     @extend %font-family-ttl;
     font-size: 4.8rem;
@@ -20,6 +17,11 @@
       font-feature-settings: "palt";
     }
   }
+
+  &__nav-toggle {
+    display: none;
+  }
+
   &__nav {
     background-color: $color-navy;
     padding-bottom: 4rem;
@@ -30,10 +32,12 @@
       justify-content: center;
       margin: 0 auto;
       width: 85%;
+
       li {
         border: 1px solid $color-lightblue;
         width: 15rem;
         text-align: center;
+
         a {
           color: $color-lightblue;
           display: block;
@@ -43,6 +47,7 @@
           padding-bottom: 2rem;
           transition: all 0.3s;
         }
+
         a:hover {
           background: $color-blue;
         }
@@ -54,119 +59,18 @@
   .header {
     top: 0;
     left: 0;
-   padding-bottom: 0;
+    padding-bottom: 0;
     position: fixed;
     width: 100%;
     z-index: 24;
+
     &__bar {
-      box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .25);
+      box-shadow: 0 4px 8px -3px rgba(17, 17, 17, .25);
       padding: 2rem 0;
     }
-  }
-}
 
-@media (max-width: 768px) {
-  .header {
-    top: 0;
-    left: 0;
-   padding-bottom: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 24;
-    &__bar {
-      background-color: $color-navy;
-      box-shadow: 0px 4px 8px -3px rgba(17, 17, 17, .25);
-    }
-    //ハンバーガーメニュー
-    &__nav-drawer {
-      display: block;
-      position: absolute;
-      .nav-unshown {
-        display: none;
-      }
-    }
-    &__nav-open {
-      display: inline-block;
-      width: 30px;
-      height: 22px;
-      vertical-align: middle;
-      padding: 10px;
-      padding-left: 15px;
-
-      span, span:before, span:after {
-        position: absolute;
-        height: 3px;
-        /*線の太さ*/
-        width: 25px;
-        /*長さ*/
-        border-radius: 3px;
-        background: $color-lightblue;
-        display: block;
-        content: '';
-        cursor: pointer;
-      }
-      span:before {
-        bottom: -8px;
-      }
-      span:after {
-        bottom: -16px;
-      }
-      &__nav-close {
-        display: none;
-        /*はじめは隠しておく*/
-        position: fixed;
-        z-index: 99;
-        top: 0;
-        /*全体に広がるように*/
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: black;
-        opacity: 0;
-        transition: .3s ease-in-out;
-      }
-      &__nav-content {
-        background: #fff;
-        height: 100%;
-        width: 60%;
-        overflow: auto;
-        padding-top: 80px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transition: .3s ease-in-out;
-        transform: translateX(-105%);
-        z-index: 10;
-        h1 {
-          padding: 20px 0;
-        }
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0 15px;
-          text-align: center;
-          font-size: 15px;
-          font-weight: normal;
-          li {
-            border-bottom: solid 1px #cecece;
-            padding: 15px;
-          }
-          li:first-child {
-            border-top: solid 1px #cecece;
-          }
-        }
-      }
-      &__nav-input:checked~.header__nav-close {
-        display: block;
-        /*カバーを表示*/
-        opacity: .5;
-      }
-      &__nav-input:checked~.header__nav-content {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
-        /*中身を表示（右へスライド）*/
-        box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
-      }
+    &__ttl {
+      font-size: 3.6rem;
     }
     &__nav {
       display: none;

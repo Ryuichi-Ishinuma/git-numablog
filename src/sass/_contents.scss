@@ -1,10 +1,9 @@
 /* selectionされた記事 */
 .selected {
   // background: $color-white;
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   max-width: 1300px;
-  width: 100%;
-  margin-bottom: 8rem;
+  padding: 2rem 4rem;
 
   /* パンくずリスト */
   .breadcrumbs {
@@ -36,7 +35,7 @@
     display: inline-block;
     line-height: 1.8;
     padding-bottom: 2rem;
-    width: 32%;
+    width: auto;
 
     a {
       display: block;
@@ -47,11 +46,6 @@
 
       .item__thumb {
         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
-        img {
-          max-width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
       }
       .item__ttl {
         font-weight: bold;
@@ -87,6 +81,26 @@
   }
   &__item:nth-child(3n- 1) {
     margin: 0 2%;
+  }
+}
+
+@media screen and(max-width: 1023px) {
+  .selected {
+    margin-top: 88px;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .selected {
+    &__list {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .selected {
+    padding: 2rem 5%;
   }
 }
 
@@ -179,81 +193,8 @@
   width: 95%;
 }
 
-
-/* 目次 */
-#toc_container {
-  padding: 20px;
-  background: #f9f9f9;
-  border: 1px solid #aaa;
-  margin-bottom: 1em;
-  width: auto;
-  display: table;
-  font-size: 95%;
-  margin: 0 auto;
+@media screen and(max-width: 1023px) {
+  .contents__item {
+    margin: 0 auto;
+  }
 }
-
-#toc_container p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  color: #333333;
-}
-
-#toc_container ul {
-  list-style: none;
-  padding: 0;
-}
-
-#toc_container ul a {
-  text-decoration: none;
-  color: #2700ff;
-}
-
-#toc_container ul a:hover {
-  text-decoration: underline;
-  color: #2700ff;
-}
-
-// /*　投稿記事のスタイル */
-// .contents article h2 {
-//   background: #f7f7f7;
-//   padding: 10px 20px;
-//   border-left: 8px solid #2700ff;
-//   font-weight: bold;
-//   margin: 30px 20px 5px;
-//   font-size: 26px;
-// }
-//
-// .contents article h3 {
-//   border-bottom: 5px solid #f7f7f7;
-//   font-weight: bold;
-//   font-size: 18px;
-//   margin: 30px 20px 5px;
-//   padding: 10px 20px;
-// }
-//
-// @media (max-width: 639px) {
-//   .contents article h2 {
-//     padding: 5px 10px;
-//     font-size: 20px;
-//   }
-//
-//   .contents article h2 span {
-//     padding: 10px 5px;
-//   }
-// }
-//
-// /* start スマホサイズ */
-// @media (max-width: 600px) {
-//   .container .archive-title {
-//     width: 100%;
-//   }
-//   .container .singlepage {
-//     width: 100%;
-//   }
-//   .container .singlepage .article-title {
-//     font-size: 18px;
-//     padding-top: 20px;
-//   }
-// }

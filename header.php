@@ -7,13 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type=" text/css">
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/style.css"> -->
+    <!-- スタイルシート -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/main.css">
-
+    <!-- Font Awesome 'Arial' -->
+    <link href="https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'">
     <!-- icomoon SNSシェアボタン用 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/icomoon/style.css">
-
     <!-- Font Awesome CDN -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
@@ -25,11 +24,11 @@
     })(window,document,'script','dataLayer','GTM-WJ9FP9Q');</script>
     <!-- End Google Tag Manager -->
 
-<!-- Googleアドセンス -->
-<script data-ad-client="ca-pub-4640265523301177" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Googleアドセンス -->
+    <script data-ad-client="ca-pub-4640265523301177" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!--Adobe Affiliate program -->
-<!-- TradeDoubler site verification 3117251 -->
+    <!--Adobe Affiliate program -->
+    <!-- TradeDoubler site verification 3117251 -->
 
 <?php wp_head(); ?>
 </head>
@@ -37,23 +36,13 @@
 <body <?php body_class(); ?>>
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ9FP9Q" height="0" width="0"   style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ9FP9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     <header class="header">
-        <div class="header__bar siteinfo">
-            <?php if ( wp_is_mobile() ) : ?>
-            <div class="header__nav-drawer">
-                <input class="header__nav-input nav-unshown" type="checkbox">
-                <label id="header__nav-open" for="nav-input"><span></span></label>
-                <label class="header__nav-close nav-unshown" for="nav-input"></label>
-                <div class="header__nav-content">
-                    <h1><a href="<?php echo home_url(); ?>">
-                            <?php bloginfo('name'); ?></a></h1>
-                    <?php wp_nav_menu( 'theme_location=navigation'); ?>
-                </div>
-            </div>
-            <?php endif; ?>
+        <div class="header__bar">
 
             <div class="inner">
                 <h1 class="header__ttl">
@@ -62,6 +51,24 @@
                   </a>
                 </h1>
             </div>
+        </div>
+
+        <div class="header__nav-toggle">
+          <?php if ( wp_is_mobile() ) : ?>
+            <div id="nav-toggle">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div id="global-nav">
+              <nav>
+                <?php wp_nav_menu( 'theme_location=navigation'); ?>
+              </nav>
+            </div>
+          <?php endif; ?>
         </div>
 
         <nav class="header__nav">

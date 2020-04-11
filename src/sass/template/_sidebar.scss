@@ -148,12 +148,13 @@
 
 
 /* start タブレットサイズ */
-@media (max-width: 1000px) {
+@media screen and(max-width: 1023px) {
   .sidebar {
+    margin: 0 auto;
     width: 60%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .sidebar {
     width: 100%;
   }

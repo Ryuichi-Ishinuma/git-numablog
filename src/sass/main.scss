@@ -25,7 +25,6 @@
 @import "_layout";
 @import "_component";
 @import "_contents";
-@import "_contact";
 
 /////////////////////////////////
 // レイアウト
@@ -35,8 +34,11 @@
 /////////////////////////////////
 // パーツ
 /////////////////////////////////
+@import "./parts/_nav-toggle";
 @import "./parts/_pager";
 @import "./parts/_search";
-@import "./parts/sns-share";
+@import "./parts/_toc";
+@import "./parts/_sns-share";
+@import "./parts/_contact";
 @import "./parts/_404";
 @import "./parts/_kaereba";

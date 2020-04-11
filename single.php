@@ -43,7 +43,7 @@
           <!-- SNSシェアボタン -->
           <?php get_template_part('sns-share'); ?>
 
-          <?php comments_template(); ?>
+          <?php comments_template("/comments.php"); ?>
       </article>
       <?php endwhile; endif; ?>
     </div>

@@ -59,12 +59,17 @@
 }
 
 @media screen and (max-width: 648px) {
-  .contents article {
-    width: auto;
-    display: block;
-  }
-
-  .contents article h2 {
-    font-size: 18px;
+  .contents {
+    .singlepage {
+      width: auto;
+      display: block;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        line-height: 1.75;
+        padding: 0;
+      }
+    }
   }
 }

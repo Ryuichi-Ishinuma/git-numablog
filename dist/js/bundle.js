@@ -98,6 +98,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/comments.js":
+/*!****************************!*\
+  !*** ./src/js/comments.js ***!
+  \****************************/
+/*! exports provided: comments */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"comments\", function() { return comments; });\nfunction comments() {\n  \"use strict\";\n\n  const j = jQuery;\n\n  j(\".wpcf7-submit\").val('Submit');\n}\n\n\n//# sourceURL=webpack:///./src/js/comments.js?");
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -106,7 +118,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app */ \"./src/js/app.js\");\n\n\n\nObject(_app__WEBPACK_IMPORTED_MODULE_0__[\"app\"])();\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navToggle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navToggle */ \"./src/js/navToggle.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app */ \"./src/js/app.js\");\n/* harmony import */ var _comments__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comments */ \"./src/js/comments.js\");\n\n\n\n\n\nObject(_navToggle__WEBPACK_IMPORTED_MODULE_0__[\"navToggle\"])();\nObject(_app__WEBPACK_IMPORTED_MODULE_1__[\"app\"])();\nObject(_comments__WEBPACK_IMPORTED_MODULE_2__[\"comments\"])();\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/navToggle.js":
+/*!*****************************!*\
+  !*** ./src/js/navToggle.js ***!
+  \*****************************/
+/*! exports provided: navToggle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navToggle\", function() { return navToggle; });\n\nfunction navToggle() {\n  \"use strict\";\n  const j = jQuery;\n\n  (function(j) {\n    j(\"#nav-toggle\").on('click', function(){\n      j(\".header__nav-toggle\").toggleClass(\"open\");\n    });\n  })(j);\n}\n\n\n//# sourceURL=webpack:///./src/js/navToggle.js?");
 
 /***/ })
 

@@ -3,8 +3,10 @@
   width: 100%;
   text-align: center;
   .wp-pagenavi {
-    display: inline-block;
-    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto;
   }
   .pages,
   .current {
@@ -48,5 +50,17 @@
   .nextpostslink:hover {
     background: $color-navy;
     border: 3px solid $color-lightblue;
+  }
+}
+
+@media screen and(max-width: 640px) {
+  .pager {
+    .pages,
+    .current,
+    .page,
+    .previouspostslink,
+    .nextpostslink {
+      margin: 0 0.5rem 2rem;
+    }
   }
 }

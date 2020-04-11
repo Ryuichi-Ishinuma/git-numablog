@@ -1,0 +1,30 @@
+
+/* お問い合わせフォーム */
+.wpcf7 {
+  p {
+    margin-bottom: 2rem;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    appearance: none;
+    background-color: $color-navy;
+    border: 3px solid $color-lightblue;
+    color: $color-lightblue;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    margin-top: 2rem;
+    padding: 2rem;
+    transition: all 0.3s;
+    width: 20rem;
+  }
+  input[type="submit"]:hover {
+    background-color: $color-blue;
+  }
+}

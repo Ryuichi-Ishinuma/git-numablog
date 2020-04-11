@@ -5,7 +5,7 @@
       <p class="contact__txt">ご意見、ご相談、お仕事のご依頼などお気軽にお問い合わせください。</p>
       <a href="<?php echo home_url(); ?>/form/">
         <div class="contact__btn">
-          <span class="btn__txt">CONTACT FORM</span>
+          <span class="btn__txt">Contact Form</span>
         </div>
       </a>
     </div>
@@ -39,7 +39,13 @@
   </div>
 </footer>
 <!-- スクリプトの読み込み -->
+<!-- webpack bundle.js -->
 <script src="<?php echo get_template_directory_uri(); ?>/dist/js/bundle.js"></script>
+<!-- JQuery CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
 
 <?php wp_footer(); ?>
 </body>
