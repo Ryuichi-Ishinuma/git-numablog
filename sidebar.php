@@ -44,7 +44,7 @@
       ?>
       <dl class="sidebar__popular-item">
         <dt class="popular-list__thumb">
-          <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail("thumbnail"); ?></a>
+          <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail("medium"); ?></a>
         </dt>
         <dt class="popular-list__txt">
           <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
