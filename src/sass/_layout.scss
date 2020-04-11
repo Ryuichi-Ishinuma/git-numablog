@@ -30,6 +30,16 @@ a {
 p {
   line-height: 1.75;
 }
+@media screen and(max-width: 1023px) {
+  .wrapper {
+    display: block;
+    padding: 0;
+
+    .main {
+      width: 100%;
+    }
+  }
+}
 
 // .container {
 //   margin-left: auto;

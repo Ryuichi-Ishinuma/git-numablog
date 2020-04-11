@@ -10,8 +10,8 @@
     <span>Pickup Posts</span>
   </div>
   <ul class="selected__list">
-    <li class="selected__item">
-      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/'); ?>">
+    <li class="selected__item" <?php post_class(); ?>>
+      <a href="<?php the_permalink(1608); ?>">
         <div class="item__thumb">
           <?php if( has_post_thumbnail() ): ?>
             <?php the_post_thumbnail( 'medium' ); ?>
@@ -19,18 +19,18 @@
         </div>
         <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
-          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-              <?php echo get_the_date('Y.m.d'); ?>
-          </time>
-          <span class="item__category">
-              <?php the_category(','); ?>
-          </span>
+            <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                <?php echo get_the_date('Y.m.d'); ?>
+            </time>
+            <span class="item__category">
+                <?php the_category(','); ?>
+            </span>
         </div>
       </a>
     </li>
 
-    <li class="selected__item">
-      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/', true); ?>">
+    <li class="selected__item" <?php post_class(); ?>>
+      <a href="<?php the_permalink(); ?>">
         <div class="item__thumb">
           <?php if( has_post_thumbnail() ): ?>
             <?php the_post_thumbnail( 'medium' ); ?>
@@ -38,18 +38,18 @@
         </div>
         <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
-          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-              <?php echo get_the_date('Y.m.d'); ?>
-          </time>
-          <span class="item__category">
-              <?php the_category(','); ?>
-          </span>
+            <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                <?php echo get_the_date('Y.m.d'); ?>
+            </time>
+            <span class="item__category">
+                <?php the_category(','); ?>
+            </span>
         </div>
       </a>
     </li>
 
-    <li class="selected__item">
-      <a href="<?php $permalink =  get_permalink('techacademy-webdesign-course/'); ?>">
+    <li class="selected__item" <?php post_class(); ?>>
+      <a href="<?php the_permalink(); ?>">
         <div class="item__thumb">
           <?php if( has_post_thumbnail() ): ?>
             <?php the_post_thumbnail( 'medium' ); ?>
@@ -57,12 +57,12 @@
         </div>
         <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>
         <div class="item__postinfo">
-          <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-              <?php echo get_the_date('Y.m.d'); ?>
-          </time>
-          <span class="item__category">
-              <?php the_category(','); ?>
-          </span>
+            <time class="item__date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                <?php echo get_the_date('Y.m.d'); ?>
+            </time>
+            <span class="item__category">
+                <?php the_category(','); ?>
+            </span>
         </div>
       </a>
     </li>

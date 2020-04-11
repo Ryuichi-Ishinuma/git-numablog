@@ -165,6 +165,21 @@
 }
 // --------------------------------------------------------------------------------
 
+// アーカイブ
+.archive-title {
+  background: $color-navy;
+  border: 3px solid $color-lightblue;
+  color: $color-lightblue;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin: 2rem 5% 4rem 0;
+  padding: 15px 0;
+  text-align: center;
+  width: 95%;
+}
+
+
 /* 目次 */
 #toc_container {
   padding: 20px;
@@ -198,45 +213,6 @@
 #toc_container ul a:hover {
   text-decoration: underline;
   color: #2700ff;
-}
-
-/* 見出し */
-.archive-title {
-  background: #0a8fa5;
-  color: #fff;
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 0.1rem;
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding: 15px 0;
-  text-align: center;
-  width: 95%;
-}
-
-
-/* 記事の概要 */
-p.more {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 25px;
-}
-
-p.more a {
-  background: #fff;
-  border: 2px solid #0a8fa5;
-  color: #222;
-  font-weight: 700;
-  padding: 20px 35px;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-
-p.more a:hover {
-  background: #0a8fa5;
-  color: #fff;
-  transition: all 0.3s ease 0s;
 }
 
 // /*　投稿記事のスタイル */
