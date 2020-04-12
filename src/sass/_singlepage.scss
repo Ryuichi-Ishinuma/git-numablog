@@ -53,12 +53,26 @@
     p {
       line-height: 2;
       padding: 0 2rem;
+      //通常挿入画像用
       img {
         margin: 0;
         width: 100%;
         height: auto;
         object-fit: cover;
       }
+      a {
+        color: #0000ee;
+        text-decoration: underline;
+        // 広告リンク画像用
+        img {
+          margin: 2rem 0;
+          width: auto;
+        }
+      }
+    }
+    ul {
+      list-style: unset;
+      background: $color-lightgray;
     }
   }
 }
@@ -69,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 640px) {
   .contents {
     .singlepage {
       width: auto;

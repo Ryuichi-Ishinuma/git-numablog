@@ -105,13 +105,16 @@
   .selected {
     &__list {
       display: block;
-      text-align: center;
     }
   }
 }
 @media screen and (max-width: 640px) {
   .selected {
-    padding: 2rem 5%;
+    padding: 0 2rem;
+
+    &__item {
+      width: 100%;
+    }
   }
 }
 
@@ -212,8 +215,25 @@
   width: 95%;
 }
 
+// --------------------------------------------------------------------------------
 @media screen and(max-width: 1023px) {
   .contents__item {
     margin: 0 auto;
+  }
+}
+
+
+@media screen and(max-width: 640px) {
+  .wrapper {
+    padding: 0 2rem;
+
+    .contents {
+      &__list {
+        display: block;
+      }
+      &__item {
+        width: 100%;
+      }
+    }
   }
 }
