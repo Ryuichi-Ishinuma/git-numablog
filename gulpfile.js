@@ -10,6 +10,12 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const browserSync = require("browser-sync");
 
+//画像圧縮
+const imagemin = require("gulp-imagemin");
+const rename = require("gulp-rename");
+const pngquant = require("imagemin-pngquant");
+const mozjpeg = require("imagemin-mozjpeg");
+
 // PHP用
 const connectPhp = require("gulp-connect-php");
 
@@ -42,6 +48,23 @@ gulp.task("sass", () => {
     // }))
   );
 });
+
+gulp.task('imagemin', function () {
+  return gulp.src('src/images/*.{jpg,jpeg,png,gif,svg}')
+  .pipe(imagemin(
+    [
+      pngquant({ quality: [.7, .8], speed: 1 }),
+      mozjpeg({ quality: 80 }),
+      imagemin.svgo(),
+      imagemin.gifsicle()
+    ]
+  ))
+  .pipe(rename(function(path) {
+    path.basename += "_min";
+  }))
+  .pipe(gulp.dest('dist/images/'));
+});
+
 
 gulp.task('script', done => {
   return (
@@ -97,4 +120,4 @@ gulp.task('reload', done => {
 /////////////////////////////////
 //デフォルトタスク
 /////////////////////////////////
-gulp.task("default", gulp.parallel("sass","bundle", "server","build"));
+gulp.task("default", gulp.parallel("sass","imagemin", "script", "bundle", "server","build"));
