@@ -6,7 +6,7 @@
   <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
       <?php if(function_exists('bcn_display')) {bcn_display(); }?>
   </div>
-  <div class="selected__ttl">
+  <!-- <div class="selected__ttl">
     <span>Pickup Posts</span>
   </div>
   <ul class="selected__list">
@@ -66,7 +66,7 @@
         </div>
       </a>
     </li>
-  </ul>
+  </ul> -->
 </section>
 
 <!-- コンテンツ -->

@@ -90,11 +90,10 @@
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! exports provided: app */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"app\", function() { return app; });\n\nfunction app() {\n  alert('webpackつながりました');\n}\n\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("// \n// export function app() {\n//   alert('webpackつながりました');\n// }\n\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
@@ -118,7 +117,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navToggle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navToggle */ \"./src/js/navToggle.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app */ \"./src/js/app.js\");\n/* harmony import */ var _comments__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comments */ \"./src/js/comments.js\");\n\n\n\n\n\nObject(_navToggle__WEBPACK_IMPORTED_MODULE_0__[\"navToggle\"])();\nObject(_app__WEBPACK_IMPORTED_MODULE_1__[\"app\"])();\nObject(_comments__WEBPACK_IMPORTED_MODULE_2__[\"comments\"])();\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navToggle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navToggle */ \"./src/js/navToggle.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app */ \"./src/js/app.js\");\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_app__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _comments__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comments */ \"./src/js/comments.js\");\n\n\n\n\n\nObject(_navToggle__WEBPACK_IMPORTED_MODULE_0__[\"navToggle\"])();\nObject(_app__WEBPACK_IMPORTED_MODULE_1__[\"app\"])();\nObject(_comments__WEBPACK_IMPORTED_MODULE_2__[\"comments\"])();\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 

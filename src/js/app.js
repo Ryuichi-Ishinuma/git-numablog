@@ -1,4 +1,4 @@
-
-export function app() {
-  alert('webpackつながりました');
-}
+// 
+// export function app() {
+//   alert('webpackつながりました');
+// }
