@@ -16,14 +16,16 @@
 @import '_variables'; // 変数定義
 
 /////////////////////////////////
-// モジュール
+// テンプレート
 /////////////////////////////////
 @import "./template/_header";
 @import "./template/_sidebar";
 @import "./template/_footer";
 
+/////////////////////////////////
+// ベーシック
+/////////////////////////////////
 @import "_layout";
-@import "_component";
 @import "_contents";
 
 /////////////////////////////////
@@ -37,6 +39,7 @@
 @import "./parts/_nav-toggle";
 @import "./parts/_pager";
 @import "./parts/_search";
+@import "./parts/comments";
 @import "./parts/_toc";
 @import "./parts/_sns-share";
 @import "./parts/_contact";

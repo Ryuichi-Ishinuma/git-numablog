@@ -8,10 +8,15 @@
   /* パンくずリスト */
   .breadcrumbs {
     color: $color-black;
-    font-size: 1.4rem;
     line-height: 1.8;
     padding: 1rem 0;
     text-align: left;
+    span {
+      a {
+        cursor: pointer;
+        color: $color-lightgray;
+      }
+    }
   }
 
   &__ttl {

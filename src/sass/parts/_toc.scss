@@ -1,13 +1,11 @@
 /* 目次 */
 #toc_container {
   padding: 20px;
-  background: #f9f9f9;
-  border: 1px solid #aaa;
-  margin-bottom: 1em;
+  background: $color-lightgray;
+  border: 3px solid $color-lightblue;
+  margin: 2em 0;
   width: auto;
   display: table;
-  font-size: 95%;
-  margin: 0 auto;
 }
 
 #toc_container p {

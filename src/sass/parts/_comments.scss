@@ -1,0 +1,73 @@
+
+.comments {
+
+  .comment-respond {
+    .comment-reply-title {
+      background: $color-navy;
+      border: 3px solid $color-lightblue;
+      border-left: 2rem solid $color-lightblue;
+      color: $color-lightblue;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem 2rem;
+    }
+
+    .comment-form {
+      //共通のスタイル
+      p {
+        margin-bottom: 2rem;
+      }
+      label {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        vertical-align: top;
+
+        span {
+          color: red;
+        }
+      }
+      input,textarea {
+        font-size: 1.6rem;
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        letter-spacing: 0.1em;
+      }
+      input {
+        height: 2rem;
+      }
+
+      .comment-form-comment {
+      }
+
+
+      .form-submit {
+        text-align: center;
+
+        input[type="submit"] {
+          background-color: $color-navy;
+          border: 3px solid $color-lightblue;
+          color: $color-lightblue;
+          font-size: 1.6rem;
+          font-weight: 700;
+          height: auto;
+          letter-spacing: .1em;
+          margin-top: 2rem;
+          padding: 2rem;
+          transition: all .3s;
+          width: 20rem;
+        }
+        input[type="submit"]:hover {
+          background: $color-blue;
+        }
+      }
+      .comment-notes,
+      .comment-form-url,
+      .comment-form-cookies-consent {
+        display: none;
+      }
+    }
+  }
+}
