@@ -58,7 +58,7 @@
         margin: 0;
         width: 100%;
         height: auto;
-        object-fit: cover;
+        vertical-align: bottom;
       }
       a {
         color: #0000ee;
@@ -71,8 +71,15 @@
       }
     }
     ul {
-      list-style: unset;
       background: $color-lightgray;
+      margin: 0 2rem;
+      padding: 1rem;
+      li {
+        background: $color-lightgray;
+        list-style: disc;
+        margin: 0 2rem;
+        padding: 1rem 0;
+      }
     }
   }
 }
