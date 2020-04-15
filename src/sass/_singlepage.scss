@@ -53,20 +53,28 @@
     p {
       line-height: 2;
       padding: 0 2rem;
-      //通常挿入画像用
+      //サムネイル用
+      .size-full {
+        width: 100%;
+      }
       img {
         margin: 0;
-        width: 100%;
+        width: auto;
+        max-width: 100%;
         height: auto;
         vertical-align: bottom;
       }
       a {
         color: #0000ee;
+        display: block;
         text-decoration: underline;
-        // 広告リンク画像用
+        // 広告リンクバナー用
         img {
-          margin: 2rem 0;
+          box-sizing: border-box;
           width: auto;
+          max-width: 100%;
+          height: auto;
+          margin: 2rem 0;
         }
       }
     }
