@@ -9,10 +9,6 @@
 
     <!-- スタイルシート -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/main.css">
-    <!-- Font Awesome 'Arial' -->
-    <link href="https://fonts.googleapis.com/css?family=Arial' rel='stylesheet' type='text/css'">
-    <!-- icomoon SNSシェアボタン用 -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/icomoon/style.css">
     <!-- Font Awesome CDN -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
@@ -23,9 +19,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WJ9FP9Q');</script>
     <!-- End Google Tag Manager -->
-
-    <!-- Googleアドセンス -->
-    <script data-ad-client="ca-pub-4640265523301177" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!--Adobe Affiliate program -->
     <!-- TradeDoubler site verification 3117251 -->
