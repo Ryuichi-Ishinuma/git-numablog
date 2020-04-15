@@ -49,6 +49,17 @@ img {
 }
 @media (max-width: 640px) {
   .wrapper {
+    margin: 0;
     padding: 0;
   }
+}
+
+
+@media screen and (min-width: 641px){
+  .is-pc { display:block; }
+  .is-sp { display:none; }
+}
+@media screen and (max-width: 640px){
+  .is-pc { display:none; }
+  .is-sp { display:block; }
 }

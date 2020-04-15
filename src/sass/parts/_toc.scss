@@ -1,32 +1,42 @@
 /* 目次 */
 #toc_container {
-  padding: 20px;
-  background: $color-lightgray;
+  padding: 1rem;
+  background: $color-navy;
   border: 3px solid $color-lightblue;
-  margin: 2em auto;
+  margin: 2rem auto;
   width: auto;
   display: table;
+  .toc_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 0;
+    color: $color-lightblue;
+  }
+  .toc_list {
+    list-style: none;
+    padding: 0;
+    li {
+      background: $color-navy;
+      list-style: none;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: $color-lightblue;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: $color-lightblue;
+      }
+    }
+  }
 }
 
-#toc_container p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  color: #333333;
-}
+@media screen and(max-width: 640) {
+  #toc_container {
 
-#toc_container ul {
-  list-style: none;
-  padding: 0;
-}
-
-#toc_container ul a {
-  text-decoration: none;
-  color: #2700ff;
-}
-
-#toc_container ul a:hover {
-  text-decoration: underline;
-  color: #2700ff;
+    .toc_list {
+      margin: 0;
+    }
+  }
 }

@@ -34,7 +34,7 @@
        <div class="footer__menu">
         <?php wp_nav_menu( array ( 'theme_location' => 'footer__menu' ) ); ?>
       </div>
-      <small>Copyright &copy; 2019-2020&nbsp;<?php bloginfo('name'); ?>&nbsp;All Rights Reserved.</small>
+      <small>Copyright &copy; 2019-2020&nbsp;<br class="is-sp"><?php bloginfo('name'); ?>&nbsp;All Rights Reserved.</small>
     </div>
   </div>
 </footer>

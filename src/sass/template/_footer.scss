@@ -134,3 +134,38 @@
     font-size: 1.2rem;
   }
 }
+@media screen and(max-width: 640px) {
+  .footer {
+
+    &__contact {
+      margin: 4rem 0;
+      padding-bottom: 2rem;
+
+      .footer__box {
+        border-bottom: 1px solid $color-lightblue;
+        padding: 4rem 0;
+        width: 100%;
+
+        .contact__txt {
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    &__bar {
+      .footer__menu {
+        ul {
+          flex-wrap: wrap;
+
+          .page_item {
+            padding: 1rem 1rem 0;
+          }
+          .page_item::before {
+            content: '';
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
