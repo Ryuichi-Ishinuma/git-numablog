@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="wrapper">
   <div class="main">
-    <div class="contents">
+    <div class="contents is-category">
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
             <?php if(function_exists('bcn_display')){bcn_display(); }?>
         </div>

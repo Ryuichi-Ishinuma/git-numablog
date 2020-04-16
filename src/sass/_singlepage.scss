@@ -1,5 +1,5 @@
 
-.contents {
+.is-singlepage {
   margin-right: 2rem;
   padding-bottom: 2rem;
   width: 100%;
@@ -77,10 +77,14 @@
           margin: 2rem 0;
         }
       }
+      iframe {
+        height: auto;
+        width: 100%;
+        vertical-align: bottom;
+      }
     }
     ul, ol {
       background: $color-lightgray;
-      margin: 0 2rem;
       padding: 1rem;
       li {
         background: $color-lightgray;
@@ -99,11 +103,16 @@
 }
 
 @media screen and (max-width: 640px) {
-  .contents {
+  .is-singlepage {
+    margin-top: 8rem;
     .singlepage {
       display: block;
       padding: 0 1rem;
       width: auto;
+
+      &__ttl {
+        font-size: 2rem;
+      }
       h2 {
         font-size: 18px;
       }

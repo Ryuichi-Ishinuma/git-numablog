@@ -29,8 +29,9 @@
         }
       }
       input,textarea {
+        border: 1px solid $color-navy;
         font-size: 1.6rem;
-        padding: 1rem;
+        padding: 1rem 0;
         width: 100%;
         height: auto;
         letter-spacing: 0.1em;
