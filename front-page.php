@@ -3,9 +3,6 @@
 
 <!-- セレクション記事を3つ掲載する -->
 <section class="selected">
-  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-      <?php if(function_exists('bcn_display')) {bcn_display(); }?>
-  </div>
   <!-- <div class="selected__ttl">
     <span>Pickup Posts</span>
   </div>
@@ -73,6 +70,9 @@
 <div class="wrapper">
   <section class="main">
     <div class="contents">
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+        <?php if(function_exists('bcn_display')) {bcn_display(); }?>
+      </div>
       <div class="contents__new-post">
         <span>New Posts</span>
       </div>

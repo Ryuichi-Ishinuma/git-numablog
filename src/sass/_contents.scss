@@ -1,112 +1,112 @@
 /* selectionされた記事 */
-.selected {
-  margin: 0 auto;
-  max-width: 1300px;
-  padding: 2rem 4rem;
+// .selected {
+//   margin: 0 auto;
+//   max-width: 1300px;
+//   padding: 2rem 4rem;
 
-  &__ttl {
-    color: $color-black;
-    margin-bottom: 4rem;
-    text-align: center;
+//   &__ttl {
+//     color: $color-black;
+//     margin-bottom: 4rem;
+//     text-align: center;
 
-    span {
-      border-bottom: 2px solid $color-navy;
-      font-size: 3.6rem;
-      font-weight: bold;
-      padding-bottom: 1rem;
-    }
-  }
+//     span {
+//       border-bottom: 2px solid $color-navy;
+//       font-size: 3.6rem;
+//       font-weight: bold;
+//       padding-bottom: 1rem;
+//     }
+//   }
 
-  &__list {
-    display: flex;
-  }
-  &__item {
-    box-sizing: border-box;
-    display: inline-block;
-    line-height: 1.8;
-    padding-bottom: 2rem;
-    width: auto;
+//   &__list {
+//     display: flex;
+//   }
+//   &__item {
+//     box-sizing: border-box;
+//     display: inline-block;
+//     line-height: 1.8;
+//     padding-bottom: 2rem;
+//     width: auto;
 
-    a {
-      display: block;
-      height: auto;
-      overflow: hidden;
-      padding: 1rem 1rem 0;
-      text-decoration: none;
+//     a {
+//       display: block;
+//       height: auto;
+//       overflow: hidden;
+//       padding: 1rem 1rem 0;
+//       text-decoration: none;
 
-      .item__thumb {
-        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
-        overflow: hidden;
-        img {
-          display: block;
-          transition-duration: .4s;
-        }
-      }
-      .item__ttl {
-        font-weight: bold;
-        margin: 2rem 0 1rem;
-        span {
-          background-image: linear-gradient(180deg, transparent 60%, $color-lightblue 0);
-          background-repeat: no-repeat;
-          background-size: 0 100%;
-          text-decoration: none;
-          transition: background-size .8s ease;
-        }
-      }
-    }
-    a:hover {
-      .item__ttl span {
-        background-size: 100% 100%;
-      }
-      img {
-        transform: scale(1.1);
-        transition-duration: .4s;
-      }
-    }
+//       .item__thumb {
+//         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+//         overflow: hidden;
+//         img {
+//           display: block;
+//           transition-duration: .4s;
+//         }
+//       }
+//       .item__ttl {
+//         font-weight: bold;
+//         margin: 2rem 0 1rem;
+//         span {
+//           background-image: linear-gradient(180deg, transparent 60%, $color-lightblue 0);
+//           background-repeat: no-repeat;
+//           background-size: 0 100%;
+//           text-decoration: none;
+//           transition: background-size .8s ease;
+//         }
+//       }
+//     }
+//     a:hover {
+//       .item__ttl span {
+//         background-size: 100% 100%;
+//       }
+//       img {
+//         transform: scale(1.1);
+//         transition-duration: .4s;
+//       }
+//     }
 
-  .item__postinfo {
-    display: flex;
-      a {
-        color: $color-black;
-        display: flex;
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding: 0 1rem;
-        text-decoration: none;
-      }
-      &__date {
-        color: $color-lightgray;
-        margin-right: 2rem;
-      }
-    }
-  }
-  &__item:nth-child(3n- 1) {
-    margin: 0 2%;
-  }
-}
+//   .item__postinfo {
+//     display: flex;
+//       a {
+//         color: $color-black;
+//         display: flex;
+//         font-size: 1.4rem;
+//         font-weight: bold;
+//         padding: 0 1rem;
+//         text-decoration: none;
+//       }
+//       &__date {
+//         color: $color-lightgray;
+//         margin-right: 2rem;
+//       }
+//     }
+//   }
+//   &__item:nth-child(3n- 1) {
+//     margin: 0 2%;
+//   }
+// }
 
-@media screen and(max-width: 1023px) {
-  .selected {
-    margin-top: 88px;
-  }
-}
+// @media screen and(max-width: 1023px) {
+//   .selected {
+//     margin-top: 88px;
+//   }
+// }
 
-@media screen and(max-width: 767px) {
-  .selected {
-    &__list {
-      display: block;
-    }
-  }
-}
-@media screen and (max-width: 640px) {
-  .selected {
-    padding: 0 2rem;
+// @media screen and(max-width: 767px) {
+//   .selected {
+//     &__list {
+//       display: block;
+//     }
+//   }
+// }
+// @media screen and (max-width: 640px) {
+//   .selected {
+//     padding: 0 2rem;
 
-    &__item {
-      width: 100%;
-    }
-  }
-}
+//     &__item {
+//       width: 100%;
+//     }
+//   }
+// }
 
 
 /* TOPページ 記事リスト */
