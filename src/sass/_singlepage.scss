@@ -6,15 +6,6 @@
   .singlepage {
     padding: 0 5%;
 
-    .breadcrumbs {
-      font-size: 1.2rem;
-
-      .curren-item {
-        color: $color-navy;
-        font-size: 1.2rem;
-      }
-    }
-
     &__ttl {
       font-size: 2.4rem;
       margin: 2rem 0;
@@ -28,27 +19,6 @@
       .postinfo__date {
         padding-right: 2rem;
       }
-    }
-    h2 {
-      background: $color-navy;
-      border: 3px solid $color-lightblue;
-      border-left: 2rem solid $color-lightblue;
-      color: $color-lightblue;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-top: 4rem;
-      margin-bottom: 2rem;
-      padding: 1.5rem 2rem;
-    }
-    h3 {
-      background: $color-lightgray;
-      border-left: 1rem solid $color-navy;
-      color: $color-navy;
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      padding: 1.5rem 2rem;
     }
     p {
       line-height: 2;

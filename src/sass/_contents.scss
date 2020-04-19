@@ -4,20 +4,6 @@
   max-width: 1300px;
   padding: 2rem 4rem;
 
-  /* パンくずリスト */
-  .breadcrumbs {
-    color: $color-black;
-    line-height: 1.8;
-    padding: 1rem 0;
-    text-align: left;
-    span {
-      a {
-        cursor: pointer;
-        color: $color-lightgray;
-      }
-    }
-  }
-
   &__ttl {
     color: $color-black;
     margin-bottom: 4rem;

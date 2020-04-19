@@ -1,0 +1,18 @@
+.breadcrumbs {
+    color: $color-black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    text-align: left;
+    span {
+        a {
+            cursor: pointer;
+            color: $color-black;
+        }
+    }
+
+    .curren-item {
+        color: $color-navy;
+        font-size: 1.2rem;
+    }
+}

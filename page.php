@@ -3,19 +3,19 @@
 
 <div class="wrapper">
 	<div class="main">
-		<div class="contents">
-			<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-			  <?php if(function_exists('bcn_display'))
-			  {
-			   bcn_display();
-			  }?>
-			</div>
+		<div class="contents is-singlepage">
 
 			<?php if(have_posts()): while(have_posts()):
 			the_post(); ?>
 
 			<article class="singlepage" <?php post_class(); ?>>
-				<h2 class="pagetitle"><?php the_title(); ?></h2>
+				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+				<?php if(function_exists('bcn_display'))
+				{
+				bcn_display();
+				}?>
+				</div>
+				<h1 class="pagetitle"><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 			</article>
 
