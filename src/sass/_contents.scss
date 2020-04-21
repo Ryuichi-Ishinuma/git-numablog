@@ -204,6 +204,12 @@
   text-align: center;
   width: 95%;
 }
+@media screen and(max-width: 640px) {
+  .archive-title {
+    margin: 2rem 0;
+    width: auto;
+  }
+}
 
 // --------------------------------------------------------------------------------
 @media screen and(max-width: 1023px) {
@@ -218,11 +224,16 @@
     padding: 0 2rem;
 
     .contents {
+      margin-top: 6rem;
+      
       &__list {
         display: block;
       }
       &__item {
         width: 100%;
+        a {
+          padding: 0;
+        }
       }
     }
   }
