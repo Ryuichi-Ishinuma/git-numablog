@@ -10,7 +10,7 @@
       </a>
     </div>
   </div>
-  <div class="footer__sns">
+  <!-- <div class="footer__sns">
     <ul class="sns__list">
       <li>
         <a href="https://twitter.com/ryu_webdesi31" target="_blank">
@@ -28,7 +28,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </div> -->
   <div class="footer__bar">
     <div class="inner">
        <div class="footer__menu">

@@ -20,6 +20,9 @@
     })(window,document,'script','dataLayer','GTM-WJ9FP9Q');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Google Adsense -->
+    <script data-ad-client="ca-pub-4640265523301177" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <!--Adobe Affiliate program -->
     <!-- TradeDoubler site verification 3117251 -->
 
