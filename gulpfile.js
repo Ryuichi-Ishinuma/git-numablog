@@ -64,9 +64,6 @@ gulp.task('imagemin', function () {
 gulp.task('script', done => {
   return (
     gulp.src('src/js/*.js')
-    // .pipe(babel({
-    //   preset: <'es2015'>
-    // }))
     .pipe(plumber({
       errorHandler: notify.onError('Error:<%= error.message %>')
     }))
