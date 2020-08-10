@@ -5,7 +5,7 @@
       <p class="contact__txt">ご意見、ご相談、お仕事のご依頼などお気軽にお問い合わせください。</p>
       <a href="<?php echo home_url(); ?>/form/">
         <div class="contact__btn">
-          <span class="btn__txt">Contact Form</span>
+          <span class="btn__txt">Contact</span>
         </div>
       </a>
     </div>

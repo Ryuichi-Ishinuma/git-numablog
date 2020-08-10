@@ -41,11 +41,6 @@ gulp.task("sass", () => {
     .pipe(cleancss())
     .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.stream())
-    //修正の必要あり
-    // .pipe(notify({
-    //   title: 'Completed compiling Sass!',
-    //   sound: 'Bacco'
-    // }))
   );
 });
 

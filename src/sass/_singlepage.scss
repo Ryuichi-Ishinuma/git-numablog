@@ -24,7 +24,7 @@
       background: $color-navy;
       border: 3px solid $color-lightblue;
       border-left: 2rem solid $color-lightblue;
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: bold;
       margin-top: 4rem;
       margin-bottom: 2rem;
@@ -38,13 +38,15 @@
       background: $color-lightgray;
       border-left: 1rem solid $color-navy;
       color: $color-navy;
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: bold;
       margin-top: 2rem;
       margin-bottom: 2rem;
       padding: 1.5rem 2rem;
     }
     p {
+      font-size: 1.6rem;
+      letter-spacing: 0.25em;
       line-height: 2;
       padding: 0 2rem;
       //サムネイル用
@@ -111,6 +113,7 @@
         font-size: 18px;
       }
       p {
+        font-size: 16px;
         line-height: 1.75;
         padding: 0;
       }
