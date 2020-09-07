@@ -19,7 +19,7 @@
             <a href="<?php the_permalink(); ?>">
               <div class="item__thumb">
                 <?php if( has_post_thumbnail() ): ?>
-                  <?php the_post_thumbnail( 'medium' ); ?>
+                  <?php the_post_thumbnail( 'large' ); ?>
                 <?php endif; ?>
               </div>
               <h2 class="item__ttl"><span><?php the_title(); ?></span></h2>

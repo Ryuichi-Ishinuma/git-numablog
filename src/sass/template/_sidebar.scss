@@ -166,3 +166,14 @@
     width: auto;
   }
 }
+
+// スポンサーリンク箇所のカスタムHTML
+.widget_custom_html {
+  text-align: center;
+
+  .widgettitle {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+}
