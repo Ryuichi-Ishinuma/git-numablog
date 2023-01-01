@@ -39,7 +39,7 @@
     "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {
-    "webpack": "^4.42.1",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   }
 }
